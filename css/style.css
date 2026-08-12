@@ -602,7 +602,6 @@ h1, h2, h3, h4 {
   align-items: center;
   color: #fff;
   background: var(--hu-red-dark);
-  overflow: hidden;
 }
 
 .hero-bg {
@@ -648,21 +647,29 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
-/* Search box floating over hero bottom edge, Stanford tarzı.
+/* Search box, hero'nun alt kenarına tam ortalanacak şekilde konumlanır.
+   position:absolute + bottom:0 kutunun alt kenarını hero'nun alt kenarına
+   hizalar; translateY(%50) ise kutuyu kendi yüksekliğinin yarısı kadar
+   aşağı kaydırır — sonuç olarak kutunun DÜŞEY ORTASI, kutunun gerçek
+   yüksekliği ne olursa olsun her zaman hero'nun alt kenarına denk gelir.
    .container sınıfını paylaşır ki hizası .hero-inner ile birebir aynı olsun. */
 .hero-search {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
   z-index: 3;
-  margin-top: -46px;
 }
 
 .hero-search form {
+  height: 64px;
   background: #fff;
   border-radius: 4px;
   box-shadow: var(--shadow-md);
   display: flex;
   align-items: center;
-  padding: 8px 8px 8px 22px;
+  padding: 0 8px 0 22px;
   gap: 10px;
 }
 
@@ -908,38 +915,37 @@ h1, h2, h3, h4 {
   display: block;
 }
 
-.stats-strip {
-  background: var(--hu-black);
-  border-radius: 8px;
-  margin-top: 16px;
-  padding: 40px 24px;
-}
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
   text-align: center;
 }
 
-.stat-item {
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0 20px;
+.stat-card {
+  background: var(--hu-cream);
+  border: 1px solid var(--hu-gray-300);
+  border-radius: 8px;
+  padding: 28px 16px;
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
-.stat-item:last-child {
-  border-right: none;
+.stat-card:hover {
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-3px);
 }
 
-.stat-item .stat-number {
+.stat-card .stat-number {
   font-family: var(--font-serif);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: #fff;
+  color: var(--hu-black);
   font-weight: 700;
 }
 
-.stat-item .stat-label {
+.stat-card .stat-label {
   font-size: 0.8rem;
-  color: var(--hu-red-light);
+  color: var(--hu-red);
   margin-top: 10px;
   line-height: 1.35;
 }
@@ -2178,7 +2184,6 @@ h1, h2, h3, h4 {
   .discover-card { min-height: 260px; }
 
   .stats-photo img { max-height: 280px; }
-  .stats-strip { padding: 28px 18px; }
 
   .events-grid { grid-template-columns: 1fr; }
   .dept-grid { grid-template-columns: repeat(2, 1fr); }
@@ -2193,13 +2198,11 @@ h1, h2, h3, h4 {
   .hero { min-height: 460px; }
   .hero-inner { padding: 80px 20px 110px; }
   .hero-cta { flex-direction: column; }
-  .hero-search form { flex-direction: column; align-items: stretch; padding: 16px; }
+  .hero-search form { height: auto; flex-direction: column; align-items: stretch; padding: 16px; }
   .hero-search button { width: 100%; }
   .header-actions .btn-outline-dark { display: none; }
   .footer-top { grid-template-columns: 1fr; padding: 48px 0 24px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
-  .stat-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 20px; }
-  .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .dept-chip { padding: 16px 18px; font-size: 0.88rem; }
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 150px); }
   .gallery-item.big { grid-column: span 1; }

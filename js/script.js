@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initEventDates();
   initFilterChips();
   initEventSearch();
+  initStatCounters();
   initContactForm();
   markActiveNavLink();
 });
@@ -169,6 +170,58 @@ function initScrollReveal() {
 
   targets.forEach(function (t) {
     observer.observe(t);
+  });
+}
+
+/* "Rakamlarla Fakültemiz" kartları — bölüm ekrana girince sayılar 0'dan
+   gerçek değerine sayarak artar. Türkçe binlik ayraç (.) korunur. */
+function initStatCounters() {
+  var counters = document.querySelectorAll("[data-count-to]");
+  if (!counters.length) return;
+
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute("data-count-to"), 10);
+    if (isNaN(target)) return;
+
+    var duration = 1400;
+    var startTime = null;
+
+    function tick(now) {
+      if (startTime === null) startTime = now;
+      var progress = Math.min((now - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.round(target * eased);
+      el.textContent = current.toLocaleString("tr-TR");
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = target.toLocaleString("tr-TR");
+      }
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  if (!("IntersectionObserver" in window)) {
+    counters.forEach(animateCounter);
+    return;
+  }
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  counters.forEach(function (el) {
+    observer.observe(el);
   });
 }
 
