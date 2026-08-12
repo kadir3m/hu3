@@ -2,97 +2,8 @@
    Hacettepe Üniversitesi — ortak stil dosyası
    Stanford University (stanford.edu) sitesinin tasarım dilinden esinlenildi:
    geniş nefes alanı, kart tabanlı hızlı bağlantılar, büyük hero görseli ve
-   mega-menü navigasyon. Yazı tipi olarak kurumsal Interstate ailesi kullanılır.
+   mega-menü navigasyon.
    ========================================================================== */
-
-/* ---------- Kurumsal yazı tipi: Interstate ---------- */
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate";
-  src: url("../fonts/Interstate-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate Condensed";
-  src: url("../fonts/Interstate-LightCondensed.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate Compressed";
-  src: url("../fonts/Interstate-LightCompressed.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Interstate Compressed";
-  src: url("../fonts/Interstate-BoldCompressed.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   /* Hacettepe kurumsal renk paleti — logo dosyasından örneklenen gerçek kırmızı: #E51937 */
@@ -108,8 +19,8 @@
   --hu-white: #ffffff;
   --hu-cream: #f8f6f2;
 
-  --font-serif: "Interstate", "Helvetica Neue", Arial, sans-serif;
-  --font-sans: "Interstate", "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-sans: "Helvetica Neue", Arial, "Segoe UI", sans-serif;
 
   --max-width: 1400px;
   --header-height: 84px;
@@ -915,37 +826,38 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+.stats-strip {
+  background: var(--hu-black);
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 40px 24px;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
   text-align: center;
 }
 
-.stat-card {
-  background: var(--hu-cream);
-  border: 1px solid var(--hu-gray-300);
-  border-radius: 8px;
-  padding: 28px 16px;
-  transition: box-shadow var(--transition), transform var(--transition);
+.stat-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0 20px;
 }
 
-.stat-card:hover {
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-3px);
+.stat-item:last-child {
+  border-right: none;
 }
 
-.stat-card .stat-number {
-  font-family: var(--font-serif);
+.stat-item .stat-number {
+  font-family: var(--font-sans);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: var(--hu-black);
+  color: #fff;
   font-weight: 700;
 }
 
-.stat-card .stat-label {
+.stat-item .stat-label {
   font-size: 0.8rem;
-  color: var(--hu-red);
+  color: var(--hu-red-light);
   margin-top: 10px;
   line-height: 1.35;
 }
@@ -2108,7 +2020,9 @@ h1, h2, h3, h4 {
   .hero-search button { width: 100%; }
   .header-actions .btn-outline-dark { display: none; }
   .footer-top { grid-template-columns: 1fr; padding: 48px 0 24px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 20px; }
+  .stat-item:nth-last-child(-n+2) { border-bottom: none; }
   .dept-chip { padding: 16px 18px; font-size: 0.88rem; }
   .events-timeline::before { left: 25px; }
   .timeline-item { gap: 16px; }
