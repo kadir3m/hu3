@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacettepe Üniversitesi Mühendislik Fakültesi | Anasayfa</title>
+  <meta name="description" content="Hacettepe Üniversitesi Mühendislik Fakültesi resmi web sitesi — bölümler, araştırma laboratuvarları, öğrenci hayatı ve duyurular." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="anasayfa">
+  <a href="#main" class="skip-link">İçeriğe geç</a>
+
+  <!-- ===================== ÜST YARDIMCI BAR ===================== -->
+  <div class="utility-bar">
+    <div class="container">
+      <nav aria-label="Hızlı erişim">
+        <ul>
+          <li><a href="#">Öğrenci Bilgi Sistemi</a></li>
+          <li><a href="#">Personel E-postası</a></li>
+          <li><a href="#">Kütüphane</a></li>
+          <li><a href="#">Bağış Yap</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <button type="button" class="active">TR</button>
+        <button type="button">EN</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== BAŞLIK / NAVİGASYON ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo/hu-icon.png" alt="Hacettepe Üniversitesi Mühendislik Fakültesi" class="brand-mark" />
+        <span class="brand-text">
+          <span class="brand-name">Mühendislik Fakültesi</span>
+          <span class="brand-sub">Hacettepe Üniversitesi</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Ana menü">
+        <ul>
+          <li data-menu-item>
+            <a href="hakkimizda.html" class="nav-link" data-nav-key="kurumsal" aria-expanded="false">
+              Kurumsal <span class="nav-caret">▾</span>
+            </a>
+            <div class="mega-menu">
+              <div>
+                <span class="mega-col-title">Üniversite</span>
+                <a href="hakkimizda.html">Tarihçe</a>
+                <a href="hakkimizda.html#dekanlik">Dekanlık ve Yönetim</a>
+                <a href="hakkimizda.html#yerleske">Yerleşkemiz</a>
+              </div>
+              <div>
+                <span class="mega-col-title">Kurumsal</span>
+                <a href="hakkimizda.html#sayilarla">Sayılarla Hacettepe</a>
+                <a href="hakkimizda.html#kimlik">Kurumsal Kimlik</a>
+                <a href="iletisim.html">İletişim Bilgileri</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="akademik.html" class="nav-link" data-nav-key="bolumlerimiz">Bölümlerimiz</a>
+          </li>
+
+          <li data-menu-item>
+            <a href="#duyurular" class="nav-link" data-nav-key="duyurular" aria-expanded="false">
+              Duyurular <span class="nav-caret">▾</span>
+            </a>
+            <div class="mega-menu">
+              <div>
+                <span class="mega-col-title">Duyuru Türleri</span>
+                <a href="#duyurular">Akademik Duyurular</a>
+                <a href="#duyurular">Sınav Duyuruları</a>
+                <a href="#duyurular">İdari Duyurular</a>
+              </div>
+              <div>
+                <span class="mega-col-title">Hızlı Erişim</span>
+                <a href="#duyurular">Tüm Duyurular</a>
+                <a href="#">Duyuru Arşivi</a>
+                <a href="#">Akademik Takvim</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="belge-ve-formlar.html" class="nav-link" data-nav-key="belge-ve-formlar">Belge ve Formlar</a>
+          </li>
+
+          <li data-menu-item>
+            <a href="ogrenci-hayati.html#galeri" class="nav-link" data-nav-key="galeri" aria-expanded="false">
+              Galeri <span class="nav-caret">▾</span>
+            </a>
+            <div class="mega-menu">
+              <div>
+                <span class="mega-col-title">Görseller</span>
+                <a href="ogrenci-hayati.html#galeri">Kampüs Galerisi</a>
+                <a href="ogrenci-hayati.html#galeri">Etkinlik Galerisi</a>
+              </div>
+              <div>
+                <span class="mega-col-title">Medya</span>
+                <a href="#">Video Galerisi</a>
+                <a href="ogrenci-hayati.html">Öğrenci Hayatı</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#duyurular" class="nav-link" data-nav-key="haberler">Haberler</a>
+          </li>
+
+          <li>
+            <a href="#etkinlikler" class="nav-link" data-nav-key="etkinlikler">Etkinlikler</a>
+          </li>
+
+          <li>
+            <a href="iletisim.html" class="nav-link" data-nav-key="iletisim">İletişim</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn search-desktop" data-search-open aria-label="Ara">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="#" class="btn btn-outline-dark" style="padding:10px 20px;">Başvur</a>
+        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Arama paneli -->
+  <div class="search-overlay">
+    <div class="search-panel">
+      <div class="container">
+        <button class="search-close" aria-label="Aramayı kapat">&times;</button>
+        <form role="search">
+          <input type="search" placeholder="Sitede ara: bölüm, akademisyen, duyuru…" aria-label="Site içi arama" />
+          <button type="submit" class="search-submit">Ara</button>
+        </form>
+        <div class="search-suggest">
+          <span>Popüler:</span>
+          <a href="akademik.html">Bölümlerimiz</a>
+          <a href="#">Akademik Takvim</a>
+          <a href="ogrenci-hayati.html">Yurt Başvurusu</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <video class="hero-bg" autoplay muted loop playsinline>
+        <source src="video/video.mp4" type="video/mp4" />
+      </video>
+      <div class="container hero-inner">
+        <span class="eyebrow">Hacettepe Üniversitesi</span>
+        <h1>Mühendislikte Bilim, Araştırma ve Yeniliğin Buluşma Noktası</h1>
+        <p class="lead">
+          Mühendislik Fakültesi; 9 bölümü, 50'den fazla araştırma
+          laboratuvarı ve güçlü sanayi işbirlikleriyle geleceğin
+          mühendislerini yetiştiriyor.
+        </p>
+        <div class="hero-cta">
+          <a href="akademik.html" class="btn btn-primary">Bölümleri Keşfet</a>
+          <a href="hakkimizda.html" class="btn btn-outline">Fakülteyi Tanı</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-search">
+      <form role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#767671" stroke-width="2" width="20" height="20"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Bölüm, laboratuvar veya duyuru ara…" aria-label="Ara" />
+        <button type="submit">Ara</button>
+      </form>
+    </div>
+
+    <!-- ===================== BÖLÜMLERİMİZ ===================== -->
+    <section class="departments-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Bölümlerimiz</h2>
+          <a href="akademik.html" class="section-link">Tüm bölümler</a>
+        </div>
+        <div class="dept-grid">
+          <a href="akademik.html" class="dept-chip reveal">Bilgisayar Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Elektrik ve Elektronik Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Endüstri Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Çevre Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Jeoloji Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Maden Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Gıda Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Kimya Mühendisliği</a>
+          <a href="akademik.html" class="dept-chip reveal">Nükleer Enerji Mühendisliği</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAKÜLTEMİZİ KEŞFET ===================== -->
+    <section class="discover-section">
+      <div class="container sticky-split">
+        <div class="sticky-col reveal">
+          <span class="eyebrow">Akademik &amp; Araştırma Dünyamız</span>
+          <h2>Fakültemizi Keşfet</h2>
+          <p class="lead-text">
+            Eğitim programlarımızdan araştırma altyapımıza, akademik
+            kadromuzdan projelerimize kadar detayları görmek için kartlara
+            tıklayın.
+          </p>
+          <div class="sticky-image">
+            <img src="img/slider/slide-2.jpg" alt="Beytepe Kampüsü'ndeki kemer anıtı" />
+          </div>
+        </div>
+
+        <div class="scroll-col">
+          <div class="discover-grid">
+            <a class="discover-card reveal" href="akademik.html">
+              <img src="img/slider/slide-2.jpg" alt="" />
+              <div class="discover-top">
+                <span class="discover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21V12h6v9"/></svg></span>
+                <span class="discover-badge">9 Bölüm</span>
+              </div>
+              <div class="discover-body">
+                <h3>Bölümlerimiz</h3>
+                <p>Bilgisayar, elektrik-elektronik, endüstri, çevre, jeoloji, maden, gıda, kimya ve nükleer enerji mühendisliği bölümlerimiz.</p>
+                <div class="discover-footer">
+                  <span class="link-label">Bölümleri Listele &amp; İncele</span>
+                  <span class="discover-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="discover-card reveal" href="akademik.html">
+              <img src="img/slider/slide-1.jpg" alt="" />
+              <div class="discover-top">
+                <span class="discover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <span class="discover-badge">3 Kademe</span>
+              </div>
+              <div class="discover-body">
+                <h3>Eğitim Programları</h3>
+                <p>Lisans, Yüksek Lisans, Doktora, Çift Anadal (ÇAP), Erasmus ve zorunlu yaz stajı programları.</p>
+                <div class="discover-footer">
+                  <span class="link-label">Programları İncele</span>
+                  <span class="discover-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="discover-card reveal" href="hakkimizda.html#laboratuvarlar">
+              <img src="img/slider/slide-7824.jpg" alt="" />
+              <div class="discover-top">
+                <span class="discover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2v7.5L4 19a2 2 0 0 0 1.8 3h12.4a2 2 0 0 0 1.8-3l-5-9.5V2"/><line x1="8" y1="2" x2="16" y2="2"/><line x1="8" y1="16" x2="16" y2="16"/></svg></span>
+                <span class="discover-badge">50+ Lab</span>
+              </div>
+              <div class="discover-body">
+                <h3>Araştırma Laboratuvarları</h3>
+                <p>Yapay zeka, biyomedikal mühendislik, VLSI devre tasarımı ve malzeme bilimi laboratuvarları.</p>
+                <div class="discover-footer">
+                  <span class="link-label">Laboratuvarları İncele</span>
+                  <span class="discover-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="discover-card reveal" href="hakkimizda.html">
+              <img src="img/slider/slide-1731.jpg" alt="" />
+              <div class="discover-top">
+                <span class="discover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <span class="discover-badge">183 Öğretim Üyesi</span>
+              </div>
+              <div class="discover-body">
+                <h3>Öğretim Elemanları</h3>
+                <p>Profesör, doçent ve araştırma görevlilerinden oluşan güçlü akademik kadromuzu tanıyın.</p>
+                <div class="discover-footer">
+                  <span class="link-label">Kadroyu Gör</span>
+                  <span class="discover-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="discover-card reveal" href="#">
+              <img src="img/slider/slide-3.jpg" alt="" />
+              <div class="discover-top">
+                <span class="discover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <span class="discover-badge">Hakemli</span>
+              </div>
+              <div class="discover-body">
+                <h3>Dergiler</h3>
+                <p>Mühendislik Bilimleri Dergisi ve bölümlerimize bağlı hakemli akademik yayınlara erişin.</p>
+                <div class="discover-footer">
+                  <span class="link-label">Dergileri Aç</span>
+                  <span class="discover-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="discover-card reveal" href="#">
+              <img src="img/slider/slide-8613.jpg" alt="" />
+              <div class="discover-top">
+                <span class="discover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+                <span class="discover-badge">103 Proje</span>
+              </div>
+              <div class="discover-body">
+                <h3>Projeler &amp; İşbirlikleri</h3>
+                <p>TÜBİTAK destekli araştırmalar, AB Horizon Europe konsorsiyumları ve sanayi Ar-Ge işbirlikleri.</p>
+                <div class="discover-footer">
+                  <span class="link-label">Projeleri Göster</span>
+                  <span class="discover-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RAKAMLARLA FAKÜLTEMİZ ===================== -->
+    <section class="stats-band">
+      <div class="container">
+        <div class="stats-intro reveal">
+          <h2>Rakamlarla Fakültemiz</h2>
+          <p>
+            Disiplinler arası araştırmalarımızı somut etkiye dönüştürmek için
+            güçlü bir akademik kadroya, geniş bir öğrenci topluluğuna ve
+            aktif araştırma projelerine sahibiz.
+          </p>
+          <a href="hakkimizda.html" class="badge-pill">Etkimiz</a>
+        </div>
+
+        <div class="stats-photo reveal">
+          <img src="img/slider/slide-3.jpg" alt="Beytepe Kampüsü'ndeki anıt, akşam ışığında" />
+        </div>
+
+        <div class="stats-strip reveal">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">2.627</div>
+              <div class="stat-label">Lisans Öğrencisi</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">511</div>
+              <div class="stat-label">Lisansüstü Öğrencisi</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">183</div>
+              <div class="stat-label">Öğretim Üyesi</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">103</div>
+              <div class="stat-label">Aktif Proje</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15.824</div>
+              <div class="stat-label">Toplam Mezun</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABERLER / DUYURULAR ===================== -->
+    <section class="news-section" id="duyurular">
+      <div class="container sticky-split">
+        <div class="sticky-col reveal">
+          <span class="eyebrow">Etkimiz</span>
+          <h2>Bilime ve Topluma Değer Katan Bir Üniversite</h2>
+          <span class="badge-pill">Haberler &amp; Duyurular</span>
+          <div class="sticky-image">
+            <img src="img/slider/slide-1.jpg" alt="Hacettepe Üniversitesi Beytepe Kampüsü'ndeki anıt" />
+          </div>
+        </div>
+
+        <div class="scroll-col">
+          <p class="lead-text">
+            Mühendislik Fakültesi; bilgisayardan çevre mühendisliğine, kimyadan
+            nükleer enerjiye kadar 9 bölümüyle ürettiği araştırmaları sektöre
+            ve topluma değere dönüştürüyor.
+          </p>
+
+          <blockquote class="pull-quote">
+            Kuruluşundan bugüne disiplinler arası araştırma vizyonuyla
+            çalışan Fakültemiz, öğretim üyelerinin ve öğrencilerinin
+            ürettiği bilgiyi sanayi işbirlikleri ve yeni teknolojilere
+            dönüştürmeyi sürdürüyor.
+          </blockquote>
+
+          <a href="#" class="section-link">Tüm haber ve duyurular</a>
+
+          <div class="spotlight-grid" id="spotlight-grid">
+            <article class="spotlight-card type-video reveal">
+              <div class="spotlight-media">
+                <img src="img/slider/slide-1731.jpg" alt="Mühendislik Fakültesi binası önünde çekilmiş tanıtım görüntüsü" />
+                <div class="video-controls">
+                  <button type="button" aria-label="Paylaş">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                  </button>
+                  <button type="button" aria-label="Tam ekran">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                  </button>
+                  <button type="button" aria-label="Sesi kapat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                  </button>
+                  <button type="button" class="cc" aria-label="Altyazılar">CC</button>
+                </div>
+                <div class="video-overlay">
+                  <span class="video-handle">@muhfak</span>
+                  <p class="video-quote">"Mühendislik eğitimi, sektörle iç içe üretilen bilgiyle güçlenir."</p>
+                  <button class="video-play" type="button" aria-label="Videoyu oynat">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="spotlight-card type-media reveal">
+              <div class="spotlight-media">
+                <img src="img/slider/slide-8613.jpg" alt="Beytepe Kampüsü'nün kuş bakışı görünümü" />
+              </div>
+              <div class="spotlight-body">
+                <h3>Mühendislik Fakültesi'nden Yapay Zekâ Alanında Uluslararası İşbirliği</h3>
+                <p>Fakültemiz, yapay zeka ve otonom sistemler alanında Avrupalı üç üniversite ile ortak araştırma protokolü imzaladı.</p>
+                <div class="spotlight-meta"><span>3 dk okuma</span><span>|</span><span>12 Ağu 2026</span></div>
+              </div>
+            </article>
+
+            <article class="spotlight-card type-text reveal">
+              <div class="spotlight-body">
+                <h3>12 maddede 2026 Bilim ve Ar-Ge Raporu</h3>
+                <p>Yıllık rapor, fakültemizin araştırma çıktılarındaki artışı ve sürdürülebilir finansman ihtiyacını ortaya koyuyor.</p>
+                <div class="spotlight-meta"><span>5 dk okuma</span><span>|</span><span>4 Ağu 2026</span></div>
+              </div>
+            </article>
+
+            <article class="spotlight-card type-text reveal">
+              <div class="spotlight-body">
+                <h3>Bahar Dönemi Ders Kayıt Takvimi Yayınlandı</h3>
+                <p>2025-2026 Bahar dönemi ders kayıtları 10-14 Şubat tarihleri arasında öğrenci bilgi sistemi üzerinden yapılacaktır.</p>
+                <div class="spotlight-meta"><span>2 dk okuma</span><span>|</span><span>29 Tem 2026</span></div>
+              </div>
+            </article>
+
+            <article class="spotlight-card type-feature reveal">
+              <div class="spotlight-media">
+                <img src="img/slider/slide-7824.jpg" alt="Mühendislik Fakültesi'nde spiral bir merdiven boşluğu" />
+                <button class="feature-play" type="button" aria-label="Videoyu oynat">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </button>
+                <span class="feature-caption">İzlemek için: Fakülte TV</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== YERLEŞKE ===================== -->
+    <section class="split-section">
+      <div class="split-media tone-a"></div>
+      <div class="split-text reveal">
+        <span class="eyebrow">Yerleşkemiz</span>
+        <h2>Beytepe Kampüsü'nde Modern Bir Mühendislik Yerleşkesi</h2>
+        <p>
+          Mühendislik Fakültesi, Beytepe Kampüsü'nün geniş yeşil alanı
+          üzerinde konumlanan bina kompleksinde 9 bölümünü, araştırma
+          laboratuvarlarını ve atölyelerini bir arada barındırır.
+        </p>
+        <ul class="split-list" id="laboratuvarlar">
+          <li>50'den fazla araştırma ve öğretim laboratuvarı</li>
+          <li>Ortak kullanım atölyeleri ve maker alanları</li>
+          <li>Öğrenci çalışma salonları ve sosyal alanlar</li>
+        </ul>
+        <div>
+          <a href="hakkimizda.html#yerleske" class="btn btn-outline-dark">Yerleşkeyi İncele</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ETKİNLİKLER ===================== -->
+    <section class="events-section" id="etkinlikler">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Etkinlikler</h2>
+          <a href="#" class="section-link">Tüm etkinlikler</a>
+        </div>
+
+        <div class="events-toolbar reveal">
+          <div class="event-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" data-event-search="#events-grid" placeholder="Etkinlik ara…" aria-label="Etkinlik ara" />
+          </div>
+          <div class="filter-bar" data-filter-for="#events-grid">
+            <button class="filter-chip active" data-filter="all">Tümü</button>
+            <button class="filter-chip" data-filter="kariyer">Kariyer</button>
+            <button class="filter-chip" data-filter="tanitim">Tanıtım</button>
+            <button class="filter-chip" data-filter="festival">Festival</button>
+            <button class="filter-chip" data-filter="toren">Tören</button>
+          </div>
+        </div>
+
+        <div class="events-grid" id="events-grid">
+          <article class="event-card reveal" data-category="kariyer">
+            <div class="event-card-head">
+              <div class="event-date-badge" data-event-date="2027-03-14">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <span class="event-category">Kariyer</span>
+            </div>
+            <h3>Mühendislik Kariyer Günleri</h3>
+            <div class="event-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Kongre Merkezi · 09:00</span>
+            </div>
+            <p class="event-desc">40'tan fazla firma ile birebir görüşme, staj ve iş fırsatları.</p>
+            <a href="#" class="event-cta">Detaylar</a>
+          </article>
+
+          <article class="event-card reveal" data-category="tanitim">
+            <div class="event-card-head">
+              <div class="event-date-badge" data-event-date="2027-04-02">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <span class="event-category">Tanıtım</span>
+            </div>
+            <h3>Açık Kapı Günü</h3>
+            <div class="event-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Beytepe Kampüsü · 10:00</span>
+            </div>
+            <p class="event-desc">Adaylar için laboratuvar gezileri, bölüm tanıtımları ve öğrenci buluşmaları.</p>
+            <a href="#" class="event-cta">Detaylar</a>
+          </article>
+
+          <article class="event-card reveal" data-category="festival">
+            <div class="event-card-head">
+              <div class="event-date-badge" data-event-date="2027-05-18">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <span class="event-category">Festival</span>
+            </div>
+            <h3>Teknoloji ve İnovasyon Şenliği</h3>
+            <div class="event-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Mühendislik Fakültesi Bahçesi · 11:00</span>
+            </div>
+            <p class="event-desc">Öğrenci proje sergisi, robotik gösterileri ve girişimcilik standları.</p>
+            <a href="#" class="event-cta">Detaylar</a>
+          </article>
+
+          <article class="event-card reveal" data-category="toren">
+            <div class="event-card-head">
+              <div class="event-date-badge" data-event-date="2027-06-07">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <span class="event-category">Tören</span>
+            </div>
+            <h3>Mezuniyet Töreni</h3>
+            <div class="event-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Kongre Merkezi · 15:00</span>
+            </div>
+            <p class="event-desc">2026-2027 mezunlarımız için tören ve resmi kep atma töreni.</p>
+            <a href="#" class="event-cta">Detaylar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <span class="brand-name">Mühendislik Fakültesi</span>
+        <p>Hacettepe Üniversitesi, Beytepe Kampüsü, 06800 Çankaya/Ankara</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 15 12 10 15 10 9"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Üniversite</h4>
+        <ul>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="hakkimizda.html#dekanlik">Dekanlık</a></li>
+          <li><a href="hakkimizda.html#yerleske">Yerleşke</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Akademik</h4>
+        <ul>
+          <li><a href="akademik.html">Bölümlerimiz</a></li>
+          <li><a href="akademik.html">Eğitim Programları</a></li>
+          <li><a href="#">Akademik Takvim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Öğrenciler</h4>
+        <ul>
+          <li><a href="ogrenci-hayati.html">Öğrenci Hayatı</a></li>
+          <li><a href="ogrenci-hayati.html">Yurtlar</a></li>
+          <li><a href="#">Kariyer Merkezi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="tel:+903123051000">+90 (312) 305 10 00</a></li>
+          <li><a href="mailto:info@hacettepe.edu.tr">info@hacettepe.edu.tr</a></li>
+          <li><a href="iletisim.html">İletişim Formu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Hacettepe Üniversitesi Mühendislik Fakültesi. Bu, eğitim amaçlı bir tasarım örneğidir.</span>
+      <ul>
+        <li><a href="#">Gizlilik</a></li>
+        <li><a href="#">Erişilebilirlik</a></li>
+        <li><a href="#">Site Haritası</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Yukarı çık">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
