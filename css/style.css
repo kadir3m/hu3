@@ -648,13 +648,12 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
-/* Search box floating over hero bottom edge, Stanford tarzı */
+/* Search box floating over hero bottom edge, Stanford tarzı.
+   .container sınıfını paylaşır ki hizası .hero-inner ile birebir aynı olsun. */
 .hero-search {
   position: relative;
   z-index: 3;
-  max-width: var(--max-width);
-  margin: -46px auto 0;
-  padding: 0 32px;
+  margin-top: -46px;
 }
 
 .hero-search form {
@@ -1211,6 +1210,17 @@ h1, h2, h3, h4 {
 .sticky-col h2 {
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   margin: 16px 0 22px;
+}
+
+.light-heading {
+  font-weight: 400;
+}
+
+.sticky-col-text {
+  color: var(--hu-gray-700);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 
 .badge-pill {
