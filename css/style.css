@@ -1157,6 +1157,40 @@ h1, h2, h3, h4 {
   border-radius: 20px;
 }
 
+/* Tanıtım videosu — video sayfanın en altında (negatif z-index ile) sabit
+   durur; önündeki her bölümün zemini dolu olduğu için video görünmez.
+   Rakamlarla Fakültemiz'den sonra gelen boş/şeffaf "spacer" bölümü ekrana
+   geldiğinde onu örten bir şey kalmaz ve video sanki o bölümün altından
+   çıkıyormuş gibi ortaya çıkar; bir sonraki bölüm geldiğinde yeniden örtülür. */
+.video-fixed-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-fixed-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-reveal-spacer {
+  height: 100vh;
+}
+
+@media (max-width: 860px) {
+  .video-fixed-layer {
+    position: static;
+    height: 60vh;
+  }
+
+  .video-reveal-spacer {
+    display: none;
+  }
+}
+
 /* Sticky spotlight — sol sütun sabit kalır, sağ sütun kendi içeriği bitene
    kadar kaydırılır. Grid satırının yüksekliği sağ (daha uzun) sütuna göre
    belirlenir; align-items:start sol sütunu kendi içerik boyutuna küçültüp
