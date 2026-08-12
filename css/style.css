@@ -111,7 +111,7 @@
   --font-serif: "Interstate", "Helvetica Neue", Arial, sans-serif;
   --font-sans: "Interstate", "Helvetica Neue", Arial, "Segoe UI", sans-serif;
 
-  --max-width: 1280px;
+  --max-width: 1400px;
   --header-height: 84px;
   --utility-height: 34px;
 
@@ -958,50 +958,78 @@ h1, h2, h3, h4 {
   background: var(--hu-cream);
 }
 
-/* Spotlight kartları — foto/metin, video ve tam genişlik öne çıkan kart tipleri */
-.spotlight-card {
-  border-radius: 6px;
+/* Haber kartları — fotoğraf + kategori etiketi + başlık + açıklama */
+.newsfeed-card {
+  background: #fff;
+  border: 1px solid var(--hu-gray-300);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  cursor: pointer;
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
-.spotlight-card:hover {
+.newsfeed-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
 }
 
-.spotlight-media {
-  position: relative;
-  height: 230px;
+.newsfeed-media {
+  height: 210px;
   overflow: hidden;
-  background: var(--hu-gray-300);
 }
 
-.spotlight-media img {
+.newsfeed-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s ease;
 }
 
-.spotlight-body {
-  padding: 22px 24px 26px;
+.newsfeed-card:hover .newsfeed-media img {
+  transform: scale(1.05);
+}
+
+.newsfeed-body {
+  padding: 20px 22px 24px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   flex: 1;
 }
 
-.spotlight-body h3 {
+.newsfeed-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hu-red);
+}
+
+.newsfeed-tag span {
+  color: var(--hu-gray-500);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 2px;
+}
+
+.newsfeed-body h3 {
   font-family: var(--font-sans);
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--hu-black);
+  transition: color var(--transition);
 }
 
-.spotlight-body p {
+.newsfeed-card:hover .newsfeed-body h3 {
+  color: var(--hu-red);
+  text-decoration: underline;
+}
+
+.newsfeed-body p {
   font-size: 0.9rem;
   color: var(--hu-gray-700);
   flex: 1;
@@ -1012,154 +1040,6 @@ h1, h2, h3, h4 {
   gap: 8px;
   font-size: 0.8rem;
   color: var(--hu-gray-500);
-}
-
-/* Görsel ve metin içeren tüm kartlarda metin bloğu açık gri zemin üzerinde */
-.spotlight-media + .spotlight-body,
-.spotlight-card.type-text .spotlight-body {
-  background: var(--hu-gray-100);
-}
-
-.spotlight-card.type-text .spotlight-body {
-  justify-content: center;
-}
-
-/* Video kartı — üzerinde alıntı ve oynat düğmesi bulunan koyu overlay */
-.spotlight-card.type-video .spotlight-media {
-  flex: 1;
-  height: auto;
-  min-height: 320px;
-}
-
-.video-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 22px;
-  background: linear-gradient(0deg, rgba(10, 4, 5, 0.85) 0%, rgba(10, 4, 5, 0.15) 55%, transparent 100%);
-  color: #fff;
-}
-
-.video-handle {
-  font-size: 0.8rem;
-  font-weight: 700;
-  opacity: 0.85;
-  margin-bottom: 10px;
-}
-
-.video-quote {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  max-width: 82%;
-}
-
-.video-play,
-.video-controls button {
-  background: rgba(10, 4, 5, 0.55);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background var(--transition);
-}
-
-.video-play:hover,
-.video-controls button:hover {
-  background: rgba(10, 4, 5, 0.8);
-}
-
-.video-play {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.video-play svg {
-  width: 15px;
-  height: 15px;
-}
-
-.video-controls {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.video-controls button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.video-controls button svg {
-  width: 14px;
-  height: 14px;
-}
-
-.video-controls button.cc {
-  width: 30px;
-  height: 22px;
-  border-radius: 4px;
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-}
-
-/* Tam genişlik öne çıkan kart */
-.spotlight-card.type-feature {
-  grid-column: 1 / -1;
-}
-
-.spotlight-card.type-feature .spotlight-media {
-  height: 320px;
-}
-
-.feature-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 72px;
-  height: 50px;
-  border-radius: 12px;
-  background: var(--hu-red);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-md);
-  transition: background var(--transition), transform var(--transition);
-}
-
-.feature-play:hover {
-  background: var(--hu-red-dark);
-  transform: translate(-50%, -50%) scale(1.06);
-}
-
-.feature-play svg {
-  width: 22px;
-  height: 22px;
-}
-
-.feature-caption {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  background: rgba(10, 4, 5, 0.65);
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 7px 14px;
-  border-radius: 20px;
 }
 
 /* Tanıtım videosu — video sayfanın en altında (negatif z-index ile) sabit
