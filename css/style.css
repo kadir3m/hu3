@@ -2126,33 +2126,74 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 860px) {
+  :root {
+    --header-height: 64px;
+    --utility-height: 0px;
+  }
+
+  .utility-bar { display: none; }
+
   .primary-nav, .header-actions .icon-btn.search-desktop { display: none; }
   .menu-toggle { display: flex; }
-  .utility-bar nav { display: none; }
+  .brand-mark { width: 38px; height: 38px; }
+  .brand-text .brand-name { font-size: 0.98rem; }
+
   .split-section { grid-template-columns: 1fr; }
-  .split-text { padding: 56px 32px; }
+  .split-text { padding: 48px 28px; }
   .footer-top { grid-template-columns: 1fr 1fr; }
+
+  .hero { min-height: 520px; }
+
+  /* Uzun anasayfada bölümler arası dikey boşluk mobilde sıkılaştırılır */
+  .departments-section,
+  .discover-section,
+  .news-section,
+  .events-section {
+    padding: 56px 0;
+  }
+
+  .content-layout,
+  .contact-layout {
+    padding: 48px 0;
+  }
+
+  .units-grid { padding: 48px 0; }
+  .feature-grid { padding: 8px 0 48px; }
+  .cta-band { padding: 56px 0; }
+  .page-header { padding: 48px 0 32px; }
+
+  .events-toolbar { align-items: stretch; }
+  .event-search-box { max-width: none; }
+
+  .discover-card { min-height: 260px; }
+
+  .stats-photo img { max-height: 280px; }
+  .stats-strip { padding: 28px 18px; }
+
   .events-grid { grid-template-columns: 1fr; }
   .dept-grid { grid-template-columns: repeat(2, 1fr); }
+  .discover-grid { grid-template-columns: 1fr; }
+  .spotlight-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 140px); }
   .gallery-item.big { grid-column: span 2; grid-row: span 1; }
 }
 
 @media (max-width: 560px) {
   .container { padding: 0 20px; }
-  .hero-inner { padding: 90px 20px 120px; }
+  .hero { min-height: 460px; }
+  .hero-inner { padding: 80px 20px 110px; }
   .hero-cta { flex-direction: column; }
   .hero-search form { flex-direction: column; align-items: stretch; padding: 16px; }
   .hero-search button { width: 100%; }
+  .header-actions .btn-outline-dark { display: none; }
   .footer-top { grid-template-columns: 1fr; padding: 48px 0 24px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 20px; }
   .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+  .dept-chip { padding: 16px 18px; font-size: 0.88rem; }
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 150px); }
   .gallery-item.big { grid-column: span 1; }
   .dept-grid { grid-template-columns: 1fr; }
-  .discover-grid { grid-template-columns: 1fr; }
-  .spotlight-grid { grid-template-columns: 1fr; }
 }
 
 /* Mobil açılır menü */
