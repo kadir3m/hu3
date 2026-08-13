@@ -928,6 +928,15 @@ h1, h2, h3, h4 {
   margin: 0 2px;
 }
 
+.featured-news-tag {
+  display: block;
+  margin: 18px 0 10px;
+}
+
+.featured-news-meta {
+  margin-bottom: 20px;
+}
+
 .newsfeed-body h3 {
   font-family: var(--font-sans);
   font-weight: 700;
