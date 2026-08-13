@@ -451,6 +451,31 @@
                 <div class="spotlight-meta"><span>2 dk okuma</span><span>|</span><span>29 Tem 2026</span></div>
               </div>
             </a>
+
+            <a class="newsfeed-card reveal" href="#">
+              <div class="newsfeed-media">
+                <img src="img/slider/slide-1.jpg" alt="Beytepe Kampüsü'ndeki anıt" />
+              </div>
+              <div class="newsfeed-body">
+                <span class="newsfeed-tag">Haber <span>|</span> Kampüs</span>
+                <h3>Beytepe Kampüsü'nde Yeni Öğrenci Yurdu Açıldı</h3>
+                <p>500 öğrenci kapasiteli yeni yurt binası, modern sosyal alanları ve çalışma salonlarıyla hizmete girdi.</p>
+                <div class="spotlight-meta"><span>3 dk okuma</span><span>|</span><span>20 Tem 2026</span></div>
+              </div>
+            </a>
+
+            <a class="newsfeed-card reveal" href="#">
+              <div class="newsfeed-media">
+                <img src="img/slider/slide-2.jpg" alt="Beytepe Kampüsü'ndeki kemer anıtı" />
+              </div>
+              <div class="newsfeed-body">
+                <span class="newsfeed-tag">Haber <span>|</span> Uluslararası</span>
+                <h3>Erasmus+ Değişim Programına Yeni Üniversiteler Eklendi</h3>
+                <p>Öğrencilerimiz artık Almanya ve İspanya'daki beş yeni ortak üniversitede değişim programına katılabilecek.</p>
+                <div class="spotlight-meta"><span>2 dk okuma</span><span>|</span><span>18 Tem 2026</span></div>
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
@@ -480,93 +505,181 @@
 
     <!-- ===================== ETKİNLİKLER ===================== -->
     <section class="events-section" id="etkinlikler">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Etkinlikler</h2>
-          <a href="#" class="section-link">Tüm etkinlikler</a>
+      <div class="container sticky-split">
+        <div class="sticky-col reveal">
+          <h2 class="light-heading">Etkinlikler</h2>
+          <span class="eyebrow">Yaklaşan Etkinlik</span>
+          <h3 class="featured-event-title">Mühendislik Kariyer Günleri</h3>
+          <div class="sticky-image">
+            <img src="https://picsum.photos/seed/hu-event-1/700/500" alt="Mühendislik Kariyer Günleri" />
+          </div>
+          <div class="featured-event-meta">
+            <span class="event-category">Kariyer</span>
+            <div class="event-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Kongre Merkezi · 14 Mart 2027 · 09:00</span>
+            </div>
+          </div>
+          <p class="sticky-col-text">40'tan fazla firma ile birebir görüşme, staj ve iş fırsatları.</p>
+          <a href="#" class="btn btn-primary">Etkinlik Detayları</a>
         </div>
 
-        <div class="events-toolbar reveal">
-          <div class="event-search-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <input type="text" data-event-search="#events-grid" placeholder="Etkinlik ara…" aria-label="Etkinlik ara" />
-          </div>
-          <div class="filter-bar" data-filter-for="#events-grid">
-            <button class="filter-chip active" data-filter="all">Tümü</button>
-            <button class="filter-chip" data-filter="kariyer">Kariyer</button>
-            <button class="filter-chip" data-filter="tanitim">Tanıtım</button>
-            <button class="filter-chip" data-filter="festival">Festival</button>
-            <button class="filter-chip" data-filter="toren">Tören</button>
-          </div>
-        </div>
+        <div class="scroll-col">
 
-        <div class="events-timeline" id="events-grid">
-          <div class="timeline-item reveal" data-category="kariyer">
-            <div class="timeline-node" data-event-date="2027-03-14">
-              <span class="day"></span>
-              <span class="month"></span>
+          <div class="events-toolbar reveal">
+            <div class="event-search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" data-event-search="#events-grid" placeholder="Etkinlik ara…" aria-label="Etkinlik ara" />
             </div>
-            <div class="timeline-content">
-              <span class="event-category">Kariyer</span>
-              <h3>Mühendislik Kariyer Günleri</h3>
-              <div class="event-location">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Kongre Merkezi · 09:00</span>
-              </div>
-              <p class="event-desc">40'tan fazla firma ile birebir görüşme, staj ve iş fırsatları.</p>
-              <a href="#" class="event-cta">Detaylar</a>
+            <div class="filter-bar" data-filter-for="#events-grid">
+              <button class="filter-chip active" data-filter="all">Tümü</button>
+              <button class="filter-chip" data-filter="kariyer">Kariyer</button>
+              <button class="filter-chip" data-filter="tanitim">Tanıtım</button>
+              <button class="filter-chip" data-filter="festival">Festival</button>
+              <button class="filter-chip" data-filter="toren">Tören</button>
             </div>
           </div>
 
-          <div class="timeline-item reveal" data-category="tanitim">
-            <div class="timeline-node" data-event-date="2027-04-02">
-              <span class="day"></span>
-              <span class="month"></span>
-            </div>
-            <div class="timeline-content">
-              <span class="event-category">Tanıtım</span>
-              <h3>Açık Kapı Günü</h3>
-              <div class="event-location">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Beytepe Kampüsü · 10:00</span>
+          <div class="events-timeline" id="events-grid">
+            <a class="timeline-item reveal" data-category="kariyer" href="#">
+              <div class="timeline-node" data-event-date="2027-03-14">
+                <span class="day"></span>
+                <span class="month"></span>
               </div>
-              <p class="event-desc">Adaylar için laboratuvar gezileri, bölüm tanıtımları ve öğrenci buluşmaları.</p>
-              <a href="#" class="event-cta">Detaylar</a>
-            </div>
-          </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-1/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Kariyer</span>
+                  <h3>Mühendislik Kariyer Günleri</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Kongre Merkezi · 09:00</span>
+                  </div>
+                  <p class="event-desc">40'tan fazla firma ile birebir görüşme, staj ve iş fırsatları.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
 
-          <div class="timeline-item reveal" data-category="festival">
-            <div class="timeline-node" data-event-date="2027-05-18">
-              <span class="day"></span>
-              <span class="month"></span>
-            </div>
-            <div class="timeline-content">
-              <span class="event-category">Festival</span>
-              <h3>Teknoloji ve İnovasyon Şenliği</h3>
-              <div class="event-location">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Mühendislik Fakültesi Bahçesi · 11:00</span>
+            <a class="timeline-item reveal" data-category="tanitim" href="#">
+              <div class="timeline-node" data-event-date="2027-04-02">
+                <span class="day"></span>
+                <span class="month"></span>
               </div>
-              <p class="event-desc">Öğrenci proje sergisi, robotik gösterileri ve girişimcilik standları.</p>
-              <a href="#" class="event-cta">Detaylar</a>
-            </div>
-          </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-2/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Tanıtım</span>
+                  <h3>Açık Kapı Günü</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Beytepe Kampüsü · 10:00</span>
+                  </div>
+                  <p class="event-desc">Adaylar için laboratuvar gezileri, bölüm tanıtımları ve öğrenci buluşmaları.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
 
-          <div class="timeline-item reveal" data-category="toren">
-            <div class="timeline-node" data-event-date="2027-06-07">
-              <span class="day"></span>
-              <span class="month"></span>
-            </div>
-            <div class="timeline-content">
-              <span class="event-category">Tören</span>
-              <h3>Mezuniyet Töreni</h3>
-              <div class="event-location">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Kongre Merkezi · 15:00</span>
+            <a class="timeline-item reveal" data-category="festival" href="#">
+              <div class="timeline-node" data-event-date="2027-05-18">
+                <span class="day"></span>
+                <span class="month"></span>
               </div>
-              <p class="event-desc">2026-2027 mezunlarımız için tören ve resmi kep atma töreni.</p>
-              <a href="#" class="event-cta">Detaylar</a>
-            </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-3/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Festival</span>
+                  <h3>Teknoloji ve İnovasyon Şenliği</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Mühendislik Fakültesi Bahçesi · 11:00</span>
+                  </div>
+                  <p class="event-desc">Öğrenci proje sergisi, robotik gösterileri ve girişimcilik standları.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="timeline-item reveal" data-category="toren" href="#">
+              <div class="timeline-node" data-event-date="2027-06-07">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-4/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Tören</span>
+                  <h3>Mezuniyet Töreni</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Kongre Merkezi · 15:00</span>
+                  </div>
+                  <p class="event-desc">2026-2027 mezunlarımız için tören ve resmi kep atma töreni.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="timeline-item reveal" data-category="kariyer" href="#">
+              <div class="timeline-node" data-event-date="2027-06-20">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-5/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Kariyer</span>
+                  <h3>Mezunlarla Buluşma Günü</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Mühendislik Fakültesi Amfisi · 14:00</span>
+                  </div>
+                  <p class="event-desc">Mezun mühendislerimizden kariyer tavsiyeleri ve networking imkânı.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="timeline-item reveal" data-category="festival" href="#">
+              <div class="timeline-node" data-event-date="2027-09-15">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-6/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Festival</span>
+                  <h3>Bilim Şenliği Açık Hava Etkinliği</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Beytepe Kampüsü Meydanı · 12:00</span>
+                  </div>
+                  <p class="event-desc">Öğrenci kulüplerinin düzenlediği bilim ve teknoloji temalı açık hava etkinliği.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="timeline-item reveal" data-category="tanitim" href="#">
+              <div class="timeline-node" data-event-date="2027-09-22">
+                <span class="day"></span>
+                <span class="month"></span>
+              </div>
+              <div class="timeline-content">
+                <img class="timeline-thumb" src="https://picsum.photos/seed/hu-event-7/160/160" alt="" />
+                <div class="timeline-text">
+                  <span class="event-category">Tanıtım</span>
+                  <h3>Yeni Öğrenci Tanıtım Günü</h3>
+                  <div class="event-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Kongre Merkezi · 09:30</span>
+                  </div>
+                  <p class="event-desc">Yeni kayıt olan öğrenciler için oryantasyon ve bölüm tanıtım programı.</p>
+                  <span class="event-cta">Detaylar</span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
