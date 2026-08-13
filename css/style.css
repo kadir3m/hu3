@@ -794,30 +794,6 @@ h1, h2, h3, h4 {
   background: #fff;
 }
 
-.featured-announcement-card {
-  display: block;
-  background: var(--hu-cream);
-  border: 1px solid var(--hu-gray-300);
-  border-radius: 8px;
-  padding: 28px 30px;
-  margin-top: 18px;
-  cursor: pointer;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.featured-announcement-card:hover {
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-3px);
-}
-
-.featured-announcement-card .featured-event-title {
-  transition: color var(--transition);
-}
-
-.featured-announcement-card:hover .featured-event-title {
-  color: var(--hu-red);
-}
-
 /* Fotoğraflı öne çıkan kart — Haberler gibi görselli sticky-col bölümlerinde */
 .featured-photo-card {
   display: block;
@@ -861,63 +837,151 @@ h1, h2, h3, h4 {
   color: var(--hu-red);
 }
 
-.announcements-all-link {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.announcement-list {
+/* Duyuru kartı — renkli tarih rozeti + ikili etiket (hedef kitle + konu) */
+.announcement-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   gap: 16px;
-}
-
-.announcement-item {
-  display: block;
+  align-items: center;
   background: var(--hu-cream);
   border: 1px solid var(--hu-gray-300);
-  border-radius: 8px;
-  padding: 22px 26px;
+  border-radius: 10px;
+  padding: 20px;
   cursor: pointer;
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
-.announcement-item:hover {
-  box-shadow: var(--shadow-sm);
-  transform: translateX(4px);
+/* Kategori (hedef kitle) etiketi kartın sağ üst köşesine bitişik oturur,
+   dış köşe yuvarlaklığı kartın kendi border-radius'uyla eşleşir */
+.announcement-card .audience-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border-radius: 0 10px 0 10px;
 }
 
-.announcement-head {
+.announcement-card .announcement-body {
+  padding-top: 4px;
+}
+
+.announcement-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.announcement-date-badge {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.announcement-date-badge.student {
+  background: var(--hu-red);
+}
+
+.announcement-date-badge.staff {
+  background: var(--hu-black);
+}
+
+.announcement-date-badge .day {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.announcement-date-badge .month {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.announcement-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.announcement-tags {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 
-.announcement-date {
-  font-size: 0.8rem;
-  color: var(--hu-gray-500);
+.audience-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 20px;
   white-space: nowrap;
 }
 
-.announcement-item h3 {
+.audience-tag.student {
+  background: #fbe1e6;
+  color: var(--hu-red-dark);
+}
+
+.audience-tag.staff {
+  background: #fbedc8;
+  color: #8a5a12;
+}
+
+.topic-label {
+  font-size: 0.82rem;
+  color: var(--hu-gray-500);
+}
+
+.announcement-body h3 {
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: 1.02rem;
-  margin-bottom: 8px;
+  font-size: 1rem;
+  margin-bottom: 6px;
   transition: color var(--transition);
 }
 
-.announcement-item:hover h3 {
+.announcement-card:hover .announcement-body h3 {
   color: var(--hu-red);
-  text-decoration: underline;
 }
 
-.announcement-item p {
-  font-size: 0.9rem;
+.announcement-body p {
+  font-size: 0.88rem;
   color: var(--hu-gray-700);
-  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.announcements-filter-bar {
+  padding-top: 0;
+  margin-bottom: 32px;
+}
+
+/* Duyurular — sabit/kayan sütun yok, iki eşit sütun halinde 3+3 kart.
+   grid-auto-flow:column + 3 satır, kartları önce sol sütuna aşağı doğru
+   sonra sağ sütuna doldurur (1-2-3 sol, 4-5-6 sağ); aynı satırdaki sol ve
+   sağ kart, grid'in doğal satır yüksekliği eşitleme davranışıyla otomatik
+   olarak aynı yüksekliğe sahip olur. */
+.announcement-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  gap: 20px 24px;
+  align-items: stretch;
+}
+
+.announcement-columns .announcement-card {
+  height: 100%;
 }
 
 /* ==========================================================================
@@ -2224,6 +2288,8 @@ h1, h2, h3, h4 {
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 150px); }
   .gallery-item.big { grid-column: span 1; }
   .dept-grid { grid-template-columns: 1fr; }
+  .announcement-columns { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
+  .announcement-columns .announcement-card { height: auto; }
 }
 
 /* Mobil açılır menü */

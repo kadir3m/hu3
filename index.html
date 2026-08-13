@@ -185,7 +185,7 @@
     <section class="departments-section">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Bölümlerimiz</h2>
+          <h2 class="light-heading">Bölümlerimiz</h2>
           <a href="akademik.html" class="section-link">Tüm bölümler</a>
         </div>
         <div class="dept-grid">
@@ -322,72 +322,108 @@
 
     <!-- ===================== DUYURULAR ===================== -->
     <section class="announcements-section">
-      <div class="container sticky-split">
-        <div class="sticky-col reveal">
+      <div class="container">
+        <div class="section-head reveal">
           <h2 class="light-heading">Duyurular</h2>
-          <a class="featured-announcement-card" href="#">
-            <span class="eyebrow">Son Duyuru</span>
-            <h3 class="featured-event-title">Bahar Dönemi Yandal / Çift Anadal Başvuruları Başladı</h3>
-            <span class="event-category featured-news-tag">Kayıt</span>
-            <p class="sticky-col-text">Yandal ve çift anadal program başvuruları 10-20 Ağustos tarihleri arasında öğrenci bilgi sistemi üzerinden alınacaktır.</p>
-            <div class="spotlight-meta featured-news-meta"><span>5 Ağustos 2026</span></div>
-            <span class="btn btn-primary">Duyurunun Tamamını Oku</span>
-          </a>
+          <a href="#" class="section-link">Tüm duyurular</a>
         </div>
 
-        <div class="scroll-col">
-          <a href="#" class="section-link announcements-all-link">Tüm duyurular</a>
-          <div class="announcement-list">
-            <a class="announcement-item reveal" href="#">
-              <div class="announcement-head">
-                <span class="event-category">Sınav</span>
-                <span class="announcement-date">3 Ağustos 2026</span>
+        <div class="filter-bar announcements-filter-bar reveal" data-filter-for="#announcement-grid">
+          <button class="filter-chip active" data-filter="all">Tüm Duyurular</button>
+          <button class="filter-chip" data-filter="student">Öğrenci</button>
+          <button class="filter-chip" data-filter="staff">Personel</button>
+        </div>
+
+        <div class="announcement-columns" id="announcement-grid">
+          <a class="announcement-card reveal" href="#" data-category="student">
+            <div class="announcement-date-badge student" data-event-date="2026-08-05">
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="announcement-body">
+              <div class="announcement-tags">
+                <span class="audience-tag student">Öğrenci</span>
+                <span class="topic-label">Kayıt</span>
+              </div>
+              <h3>Bahar Dönemi Yandal / Çift Anadal Başvuruları Başladı</h3>
+              <p>Yandal ve çift anadal program başvuruları 10-20 Ağustos tarihleri arasında öğrenci bilgi sistemi üzerinden alınacaktır.</p>
+            </div>
+          </a>
+
+          <a class="announcement-card reveal" href="#" data-category="student">
+            <div class="announcement-date-badge student" data-event-date="2026-08-03">
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="announcement-body">
+              <div class="announcement-tags">
+                <span class="audience-tag student">Öğrenci</span>
+                <span class="topic-label">Sınav</span>
               </div>
               <h3>Bütünleme Sınav Programı Yayınlandı</h3>
               <p>2025-2026 Bahar dönemi bütünleme sınav programına öğrenci bilgi sisteminden ulaşabilirsiniz.</p>
-              <span class="event-cta">Detaylı Bilgi</span>
-            </a>
+            </div>
+          </a>
 
-            <a class="announcement-item reveal" href="#">
-              <div class="announcement-head">
-                <span class="event-category">Burs</span>
-                <span class="announcement-date">30 Temmuz 2026</span>
+          <a class="announcement-card reveal" href="#" data-category="student">
+            <div class="announcement-date-badge student" data-event-date="2026-07-30">
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="announcement-body">
+              <div class="announcement-tags">
+                <span class="audience-tag student">Öğrenci</span>
+                <span class="topic-label">Burs</span>
               </div>
               <h3>Yemek Bursu Başvuru Sonuçları Açıklandı</h3>
               <p>Bahar dönemi yemek bursu başvuru sonuçları öğrenci bilgi sistemi üzerinden ilan edilmiştir.</p>
-              <span class="event-cta">Detaylı Bilgi</span>
-            </a>
+            </div>
+          </a>
 
-            <a class="announcement-item reveal" href="#">
-              <div class="announcement-head">
-                <span class="event-category">Staj</span>
-                <span class="announcement-date">25 Temmuz 2026</span>
+          <a class="announcement-card reveal" href="#" data-category="student">
+            <div class="announcement-date-badge student" data-event-date="2026-07-25">
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="announcement-body">
+              <div class="announcement-tags">
+                <span class="audience-tag student">Öğrenci</span>
+                <span class="topic-label">Staj</span>
               </div>
               <h3>Zorunlu Yaz Stajı Başvuruları Başladı</h3>
               <p>Staj yapılacak firmaların belirlenip Staj Komisyonu'na bildirilmesi gerekmektedir.</p>
-              <span class="event-cta">Detaylı Bilgi</span>
-            </a>
+            </div>
+          </a>
 
-            <a class="announcement-item reveal" href="#">
-              <div class="announcement-head">
-                <span class="event-category">Uluslararası</span>
-                <span class="announcement-date">20 Temmuz 2026</span>
+          <a class="announcement-card reveal" href="#" data-category="staff">
+            <div class="announcement-date-badge staff" data-event-date="2026-07-20">
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="announcement-body">
+              <div class="announcement-tags">
+                <span class="audience-tag staff">Personel</span>
+                <span class="topic-label">Akademik İlan</span>
               </div>
-              <h3>Erasmus+ Değişim Programı Başvuru Takvimi</h3>
-              <p>2026-2027 akademik yılı Erasmus+ değişim programı başvuruları için son tarih yaklaşıyor.</p>
-              <span class="event-cta">Detaylı Bilgi</span>
-            </a>
+              <h3>BAP ve TÜBİTAK Proje Destek Başvuruları Bilgilendirme Semineri</h3>
+              <p>Dekanlık tarafından organize edilen araştırma projeleri teşvik semineri Fakülte Konferans Salonu'nda yapılacaktır.</p>
+            </div>
+          </a>
 
-            <a class="announcement-item reveal" href="#">
-              <div class="announcement-head">
-                <span class="event-category">Kampüs</span>
-                <span class="announcement-date">15 Temmuz 2026</span>
+          <a class="announcement-card reveal" href="#" data-category="staff">
+            <div class="announcement-date-badge staff" data-event-date="2026-07-15">
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="announcement-body">
+              <div class="announcement-tags">
+                <span class="audience-tag staff">Personel</span>
+                <span class="topic-label">İdari</span>
               </div>
-              <h3>Kütüphane Çalışma Saatleri Güncellendi</h3>
-              <p>Yaz döneminde kütüphane çalışma saatleri hafta içi 08:00-20:00 olarak güncellenmiştir.</p>
-              <span class="event-cta">Detaylı Bilgi</span>
-            </a>
-          </div>
+              <h3>Fakülte Kurulu ve Yönetim Kurulu Toplantı Kararları</h3>
+              <p>Fakülte Yönetim Kurulu oturumunda alınan güncel kararlar ve ders müfredatı güncellemeleri yayınlanmıştır.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
