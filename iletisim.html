@@ -8,20 +8,21 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-page="iletisim">
-  <a href="#main" class="skip-link">İçeriğe geç</a>
+  <a href="#main" class="skip-link" data-i18n="common.skipLink">İçeriğe geç</a>
 
   <div class="utility-bar">
     <div class="container">
       <nav aria-label="Hızlı erişim">
         <ul>
-          <li><a href="#">Öğrenci Bilgi Sistemi</a></li>
-          <li><a href="#">Personel E-postası</a></li>
-          <li><a href="#">Kütüphane</a></li>
+          <li><a href="#" data-i18n="common.utility.sbs">Öğrenci Bilgi Sistemi</a></li>
+          <li><a href="#" data-i18n="common.utility.email">Personel E-postası</a></li>
+          <li><a href="#" data-i18n="common.utility.library">Kütüphane</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
-        <button type="button" class="active">TR</button>
-        <button type="button">EN</button>
+        <button type="button" class="active" data-lang="tr">TR</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="fr">FR</button>
       </div>
     </div>
   </div>
@@ -40,90 +41,90 @@
         <ul>
           <li data-menu-item>
             <a href="hakkimizda.html" class="nav-link" data-nav-key="kurumsal" aria-expanded="false">
-              Kurumsal <span class="nav-caret">▾</span>
+              <span data-i18n="common.nav.kurumsal">Kurumsal</span> <span class="nav-caret">▾</span>
             </a>
             <div class="mega-menu">
               <div>
-                <span class="mega-col-title">Üniversite</span>
-                <a href="hakkimizda.html">Tarihçe</a>
-                <a href="hakkimizda.html#dekanlik">Dekanlık ve Yönetim</a>
-                <a href="hakkimizda.html#yerleske">Yerleşkemiz</a>
+                <span class="mega-col-title" data-i18n="common.nav.kurumsalColUniversite">Üniversite</span>
+                <a href="hakkimizda.html" data-i18n="common.nav.kurumsalMenu.tarihce">Tarihçe</a>
+                <a href="hakkimizda.html#dekanlik" data-i18n="common.nav.kurumsalMenu.dekanlik">Dekanlık ve Yönetim</a>
+                <a href="hakkimizda.html#yerleske" data-i18n="common.nav.kurumsalMenu.yerleske">Yerleşkemiz</a>
               </div>
               <div>
-                <span class="mega-col-title">Kurumsal</span>
-                <a href="hakkimizda.html#sayilarla">Sayılarla Hacettepe</a>
-                <a href="hakkimizda.html#kimlik">Kurumsal Kimlik</a>
-                <a href="iletisim.html">İletişim Bilgileri</a>
+                <span class="mega-col-title" data-i18n="common.nav.kurumsalColKurumsal">Kurumsal</span>
+                <a href="hakkimizda.html#sayilarla" data-i18n="common.nav.kurumsalMenu.sayilarla">Sayılarla Hacettepe</a>
+                <a href="hakkimizda.html#kimlik" data-i18n="common.nav.kurumsalMenu.kimlik">Kurumsal Kimlik</a>
+                <a href="iletisim.html" data-i18n="common.nav.kurumsalMenu.iletisimBilgileri">İletişim Bilgileri</a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="akademik.html" class="nav-link" data-nav-key="bolumlerimiz">Bölümlerimiz</a>
+            <a href="akademik.html" class="nav-link" data-nav-key="bolumlerimiz" data-i18n="common.nav.bolumlerimiz">Bölümlerimiz</a>
           </li>
 
           <li data-menu-item>
             <a href="index.html#duyurular" class="nav-link" data-nav-key="duyurular" aria-expanded="false">
-              Duyurular <span class="nav-caret">▾</span>
+              <span data-i18n="common.nav.duyurular">Duyurular</span> <span class="nav-caret">▾</span>
             </a>
             <div class="mega-menu">
               <div>
-                <span class="mega-col-title">Duyuru Türleri</span>
-                <a href="index.html#duyurular">Akademik Duyurular</a>
-                <a href="index.html#duyurular">Sınav Duyuruları</a>
-                <a href="index.html#duyurular">İdari Duyurular</a>
+                <span class="mega-col-title" data-i18n="common.nav.duyurularCol1">Duyuru Türleri</span>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.akademik">Akademik Duyurular</a>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.sinav">Sınav Duyuruları</a>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.idari">İdari Duyurular</a>
               </div>
               <div>
-                <span class="mega-col-title">Hızlı Erişim</span>
-                <a href="index.html#duyurular">Tüm Duyurular</a>
-                <a href="#">Duyuru Arşivi</a>
-                <a href="#">Akademik Takvim</a>
+                <span class="mega-col-title" data-i18n="common.nav.duyurularCol2">Hızlı Erişim</span>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.tumDuyurular">Tüm Duyurular</a>
+                <a href="#" data-i18n="common.nav.duyurularMenu.arsiv">Duyuru Arşivi</a>
+                <a href="#" data-i18n="common.nav.duyurularMenu.takvim">Akademik Takvim</a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="belge-ve-formlar.html" class="nav-link" data-nav-key="belge-ve-formlar">Belge ve Formlar</a>
+            <a href="belge-ve-formlar.html" class="nav-link" data-nav-key="belge-ve-formlar" data-i18n="common.nav.belgeVeFormlar">Belge ve Formlar</a>
           </li>
 
           <li data-menu-item>
             <a href="ogrenci-hayati.html#galeri" class="nav-link" data-nav-key="galeri" aria-expanded="false">
-              Galeri <span class="nav-caret">▾</span>
+              <span data-i18n="common.nav.galeri">Galeri</span> <span class="nav-caret">▾</span>
             </a>
             <div class="mega-menu">
               <div>
-                <span class="mega-col-title">Görseller</span>
-                <a href="ogrenci-hayati.html#galeri">Kampüs Galerisi</a>
-                <a href="ogrenci-hayati.html#galeri">Etkinlik Galerisi</a>
+                <span class="mega-col-title" data-i18n="common.nav.galeriCol1">Görseller</span>
+                <a href="ogrenci-hayati.html#galeri" data-i18n="common.nav.galeriMenu.kampus">Kampüs Galerisi</a>
+                <a href="ogrenci-hayati.html#galeri" data-i18n="common.nav.galeriMenu.etkinlik">Etkinlik Galerisi</a>
               </div>
               <div>
-                <span class="mega-col-title">Medya</span>
-                <a href="#">Video Galerisi</a>
-                <a href="ogrenci-hayati.html">Öğrenci Hayatı</a>
+                <span class="mega-col-title" data-i18n="common.nav.galeriCol2">Medya</span>
+                <a href="#" data-i18n="common.nav.galeriMenu.video">Video Galerisi</a>
+                <a href="ogrenci-hayati.html" data-i18n="common.nav.galeriMenu.ogrenciHayati">Öğrenci Hayatı</a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="index.html#duyurular" class="nav-link" data-nav-key="haberler">Haberler</a>
+            <a href="index.html#duyurular" class="nav-link" data-nav-key="haberler" data-i18n="common.nav.haberler">Haberler</a>
           </li>
 
           <li>
-            <a href="index.html#etkinlikler" class="nav-link" data-nav-key="etkinlikler">Etkinlikler</a>
+            <a href="index.html#etkinlikler" class="nav-link" data-nav-key="etkinlikler" data-i18n="common.nav.etkinlikler">Etkinlikler</a>
           </li>
 
           <li>
-            <a href="iletisim.html" class="nav-link" data-nav-key="iletisim">İletişim</a>
+            <a href="iletisim.html" class="nav-link" data-nav-key="iletisim" data-i18n="common.nav.iletisim">İletişim</a>
           </li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn search-desktop" data-search-open aria-label="Ara">
+        <button class="icon-btn search-desktop" data-search-open aria-label="Ara" data-i18n-aria-label="common.header.searchAria">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
-        <a href="#" class="btn btn-outline-dark" style="padding:10px 20px;">Giriş</a>
-        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <a href="#" class="btn btn-outline-dark" style="padding:10px 20px;" data-i18n="common.header.girisBtn">Giriş</a>
+        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false" data-i18n-aria-label="common.header.menuAria">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -133,17 +134,17 @@
   <div class="search-overlay">
     <div class="search-panel">
       <div class="container">
-        <button class="search-close" aria-label="Aramayı kapat">&times;</button>
+        <button class="search-close" aria-label="Aramayı kapat" data-i18n-aria-label="common.search.closeAria">&times;</button>
         <form role="search">
-          <input type="search" placeholder="Sitede ara: bölüm, akademisyen, duyuru…" aria-label="Site içi arama" />
-          <button type="submit" class="search-submit">Ara</button>
+          <input type="search" placeholder="Sitede ara: bölüm, akademisyen, duyuru…" aria-label="Site içi arama" data-i18n-placeholder="common.search.placeholder" data-i18n-aria-label="common.search.ariaLabel" />
+          <button type="submit" class="search-submit" data-i18n="common.search.button">Ara</button>
         </form>
         <div class="search-suggest">
-          <span>Popüler:</span>
-          <a href="akademik.html">Bölümlerimiz</a>
-          <a href="#">Akademik Takvim</a>
-          <a href="ogrenci-hayati.html">Yurt Başvurusu</a>
-          <a href="iletisim.html">İletişim</a>
+          <span data-i18n="common.search.populer">Popüler:</span>
+          <a href="akademik.html" data-i18n="common.search.suggest.bolumlerimiz">Bölümlerimiz</a>
+          <a href="#" data-i18n="common.search.suggest.takvim">Akademik Takvim</a>
+          <a href="ogrenci-hayati.html" data-i18n="common.search.suggest.yurt">Yurt Başvurusu</a>
+          <a href="iletisim.html" data-i18n="common.search.suggest.iletisim">İletişim</a>
         </div>
       </div>
     </div>
@@ -152,9 +153,9 @@
   <main id="main">
     <section class="page-header">
       <div class="container">
-        <div class="breadcrumb"><a href="index.html">Anasayfa</a> / İletişim</div>
-        <span class="eyebrow">Bize Ulaşın</span>
-        <h1>İletişim</h1>
+        <div class="breadcrumb"><a href="index.html" data-i18n="iletisim.breadcrumb.home">Anasayfa</a> / <span data-i18n="iletisim.breadcrumb.current">İletişim</span></div>
+        <span class="eyebrow" data-i18n="iletisim.pageHeader.eyebrow">Bize Ulaşın</span>
+        <h1 data-i18n="iletisim.pageHeader.title">İletişim</h1>
       </div>
     </section>
 

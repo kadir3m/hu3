@@ -215,20 +215,98 @@ h1, h2, h3, h4 {
   color: #fff;
 }
 
-.utility-bar .lang-switch {
-  display: flex;
-  gap: 10px;
+/* Bayrak ikonları — gömülü SVG, emoji font desteğine bağlı değil */
+.flag {
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
 }
 
-.utility-bar .lang-switch button {
+.flag-tr {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23E30A17'/%3E%3Ccircle cx='1.1' cy='1' r='0.5' fill='%23fff'/%3E%3Ccircle cx='1.28' cy='1' r='0.4' fill='%23E30A17'/%3E%3Cpolygon points='1.55,0.62 1.66,0.95 2.0,0.95 1.72,1.15 1.83,1.48 1.55,1.28 1.27,1.48 1.38,1.15 1.10,0.95 1.44,0.95' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.flag-gb {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'%3E%3Crect width='60' height='40' fill='%23012169'/%3E%3Cpath d='M0,0 L60,40 M60,0 L0,40' stroke='%23fff' stroke-width='8'/%3E%3Cpath d='M0,0 L60,40 M60,0 L0,40' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 V40 M0,20 H60' stroke='%23fff' stroke-width='12'/%3E%3Cpath d='M30,0 V40 M0,20 H60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E");
+}
+
+.flag-fr {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%230055A4'/%3E%3Crect x='1' width='1' height='2' fill='%23FFFFFF'/%3E%3Crect x='2' width='1' height='2' fill='%23EF4135'/%3E%3C/svg%3E");
+}
+
+.utility-bar .lang-switch {
+  position: relative;
+}
+
+.utility-bar .lang-current {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
   color: #cfcfcf;
   font-size: 0.78rem;
+  font-family: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  padding: 3px 8px;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
 }
 
-.utility-bar .lang-switch button.active {
+.utility-bar .lang-current::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid currentColor;
+  margin-left: 2px;
+}
+
+.utility-bar .lang-current:hover,
+.utility-bar .lang-switch.is-open .lang-current {
   color: #fff;
-  font-weight: 700;
-  text-decoration: underline;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.utility-bar .lang-options {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--hu-gray-300);
+  border-radius: 6px;
+  box-shadow: var(--shadow-md);
+  padding: 6px;
+  min-width: 120px;
+  z-index: 1200;
+}
+
+.utility-bar .lang-switch.is-open .lang-options {
+  display: block;
+}
+
+.utility-bar .lang-options li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: var(--hu-gray-900);
+  cursor: pointer;
+}
+
+.utility-bar .lang-options li:hover,
+.utility-bar .lang-options li.active {
+  background: var(--hu-cream);
+  color: var(--hu-red);
 }
 
 /* ==========================================================================

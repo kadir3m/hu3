@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "anasayfa": {
+      "title": "Hacettepe University Faculty of Engineering | Home",
+      "description": "Official website of Hacettepe University Faculty of Engineering — departments, research laboratories, student life and announcements."
+    },
+    "bolumlerimiz": {
+      "title": "Departments | Hacettepe University Faculty of Engineering",
+      "description": "The departments and graduate programs of Hacettepe University Faculty of Engineering."
+    }
+  },
+  "bolumlerimiz": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Departments"
+    },
+    "hero": {
+      "eyebrow": "Education & Teaching",
+      "title": "World-Class Engineering Education Across 9 Departments"
+    },
+    "filters": {
+      "all": "All",
+      "bilgisayarElektronik": "Computer & Electronics",
+      "endustri": "Industrial & Management",
+      "cevreDoga": "Environmental & Natural Sciences",
+      "kimyaEnerji": "Chemistry & Energy"
+    },
+    "dept": {
+      "bilgisayar": { "title": "Computer Engineering", "desc": "Offers a strong curriculum in artificial intelligence, software engineering and cybersecurity." },
+      "elektrik": { "title": "Electrical and Electronics Engineering", "desc": "Provides undergraduate and graduate education in power systems, telecommunications and embedded systems." },
+      "endustri": { "title": "Industrial Engineering", "desc": "Offers an interdisciplinary education in production systems, optimization and data analytics." },
+      "cevre": { "title": "Environmental Engineering", "desc": "Focuses on water and waste management, sustainability and environmental impact assessment." },
+      "jeoloji": { "title": "Geological Engineering", "desc": "Specializes in earth sciences, mineral resources and the study of natural disaster risks." },
+      "maden": { "title": "Mining Engineering", "desc": "Provides education in mine operations, ore processing and drilling technologies." },
+      "gida": { "title": "Food Engineering", "desc": "Conducts research in food safety, processing technologies and biotechnology." },
+      "kimya": { "title": "Chemical Engineering", "desc": "Has a strong laboratory infrastructure for process design, materials science and energy conversion." },
+      "nukleer": { "title": "Nuclear Energy Engineering", "desc": "A specialized department in nuclear energy systems, radiation safety and energy policy." }
+    },
+    "cta": {
+      "title": "Learn More About Our Programs",
+      "lead": "Visit the department pages for curricula, quotas and admission requirements.",
+      "calendarBtn": "Academic Calendar",
+      "contactBtn": "Contact an Advisor"
+    }
+  },
+  "common": {
+    "skipLink": "Skip to content",
+    "utility": {
+      "sbs": "Student Information System",
+      "email": "Staff Webmail",
+      "library": "Library"
+    },
+    "nav": {
+      "kurumsal": "About",
+      "kurumsalColUniversite": "University",
+      "kurumsalColKurumsal": "Institutional",
+      "kurumsalMenu": {
+        "tarihce": "History",
+        "dekanlik": "Dean's Office & Administration",
+        "yerleske": "Our Campus",
+        "sayilarla": "Hacettepe in Numbers",
+        "kimlik": "Institutional Identity",
+        "iletisimBilgileri": "Contact Information"
+      },
+      "bolumlerimiz": "Departments",
+      "duyurular": "Announcements",
+      "duyurularCol1": "Announcement Types",
+      "duyurularCol2": "Quick Access",
+      "duyurularMenu": {
+        "akademik": "Academic Announcements",
+        "sinav": "Exam Announcements",
+        "idari": "Administrative Announcements",
+        "tumDuyurular": "All Announcements",
+        "arsiv": "Announcement Archive",
+        "takvim": "Academic Calendar"
+      },
+      "belgeVeFormlar": "Documents & Forms",
+      "galeri": "Gallery",
+      "galeriCol1": "Photos",
+      "galeriCol2": "Media",
+      "galeriMenu": {
+        "kampus": "Campus Gallery",
+        "etkinlik": "Event Gallery",
+        "video": "Video Gallery",
+        "ogrenciHayati": "Student Life"
+      },
+      "haberler": "News",
+      "etkinlikler": "Events",
+      "iletisim": "Contact"
+    },
+    "header": {
+      "girisBtn": "Sign In",
+      "searchAria": "Search",
+      "menuAria": "Open/close menu"
+    },
+    "search": {
+      "placeholder": "Search the site: department, faculty member, announcement…",
+      "ariaLabel": "Site search",
+      "button": "Search",
+      "closeAria": "Close search",
+      "populer": "Popular:",
+      "suggest": {
+        "bolumlerimiz": "Departments",
+        "takvim": "Academic Calendar",
+        "yurt": "Dormitory Application",
+        "iletisim": "Contact"
+      }
+    },
+    "footer": {
+      "brandName": "Faculty of Engineering",
+      "address": "Hacettepe University, Beytepe Campus, 06800 Çankaya/Ankara, Türkiye",
+      "colUniversite": {
+        "title": "University",
+        "hakkimizda": "About Us",
+        "dekanlik": "Dean's Office",
+        "yerleske": "Campus"
+      },
+      "colAkademik": {
+        "title": "Academics",
+        "bolumlerimiz": "Departments",
+        "egitimProgramlari": "Degree Programs",
+        "takvim": "Academic Calendar"
+      },
+      "colOgrenciler": {
+        "title": "Students",
+        "ogrenciHayati": "Student Life",
+        "yurtlar": "Dormitories",
+        "kariyerMerkezi": "Career Center"
+      },
+      "colIletisim": {
+        "title": "Contact",
+        "iletisimFormu": "Contact Form"
+      },
+      "copyright": "© 2026 Hacettepe University Faculty of Engineering. This is an educational design example.",
+      "gizlilik": "Privacy",
+      "erisilebilirlik": "Accessibility",
+      "siteHaritasi": "Sitemap"
+    },
+    "backToTop": {
+      "aria": "Back to top"
+    }
+  },
+  "index": {
+    "hero": {
+      "eyebrow": "Hacettepe University",
+      "title": "Where Science, Research and Innovation Meet in Engineering",
+      "lead": "The Faculty of Engineering trains the engineers of the future with 9 departments, more than 50 research laboratories and strong industry partnerships.",
+      "ctaExplore": "Explore Departments",
+      "ctaAbout": "Discover the Faculty",
+      "searchPlaceholder": "Search a department, lab or announcement…",
+      "searchButton": "Search"
+    },
+    "departments": {
+      "title": "Our Departments",
+      "allLink": "All departments",
+      "dept1": "Computer Engineering",
+      "dept2": "Electrical and Electronics Engineering",
+      "dept3": "Industrial Engineering",
+      "dept4": "Environmental Engineering",
+      "dept5": "Geological Engineering",
+      "dept6": "Mining Engineering",
+      "dept7": "Food Engineering",
+      "dept8": "Chemical Engineering",
+      "dept9": "Nuclear Energy Engineering"
+    },
+    "discover": {
+      "eyebrow": "Our Academic & Research World",
+      "title": "Discover Our Faculty",
+      "lead": "From our degree programs to our research infrastructure, from our academic staff to our projects, find everything our faculty offers right here.",
+      "card1": { "badge": "9 Departments", "title": "Our Departments", "desc": "Our departments in computer, electrical-electronics, industrial, environmental, geological, mining, food, chemical and nuclear energy engineering.", "link": "Browse & Explore Departments" },
+      "card2": { "badge": "3 Levels", "title": "Degree Programs", "desc": "Undergraduate, Master's, PhD, Double Major, Erasmus and mandatory summer internship programs.", "link": "Explore Programs" },
+      "card3": { "badge": "50+ Labs", "title": "Research Laboratories", "desc": "Artificial intelligence, biomedical engineering, VLSI circuit design and materials science laboratories.", "link": "Explore Laboratories" },
+      "card4": { "badge": "183 Faculty Members", "title": "Faculty Members", "desc": "Meet our strong academic staff of professors, associate professors and research assistants.", "link": "View Faculty" },
+      "card5": { "badge": "Peer-Reviewed", "title": "Journals", "desc": "Access the Journal of Engineering Sciences and other peer-reviewed academic publications from our departments.", "link": "Open Journals" },
+      "card6": { "badge": "103 Projects", "title": "Projects & Collaborations", "desc": "TÜBİTAK-funded research, EU Horizon Europe consortia and industry R&D collaborations.", "link": "View Projects" }
+    },
+    "announcements": {
+      "title": "Announcements",
+      "allLink": "All announcements",
+      "filterAll": "All Announcements",
+      "filterStudent": "Students",
+      "filterStaff": "Staff",
+      "card1": { "topic": "Enrollment", "title": "Spring Semester Minor / Double Major Applications Are Open", "desc": "Minor and double major program applications will be accepted through the student information system between August 10-20." },
+      "card2": { "topic": "Exams", "title": "Makeup Exam Schedule Published", "desc": "The 2025-2026 Spring semester makeup exam schedule is available on the student information system." },
+      "card3": { "topic": "Scholarship", "title": "Meal Scholarship Application Results Announced", "desc": "Spring semester meal scholarship application results have been announced via the student information system." },
+      "card4": { "topic": "Internship", "title": "Mandatory Summer Internship Applications Are Open", "desc": "Companies for internships must be identified and reported to the Internship Committee." },
+      "card5": { "topic": "Academic Notice", "title": "BAP and TÜBİTAK Project Support Applications Info Seminar", "desc": "The research project incentive seminar organized by the Dean's Office will be held in the Faculty Conference Hall." },
+      "card6": { "topic": "Administrative", "title": "Faculty Board and Administrative Board Meeting Decisions", "desc": "Recent decisions from the Faculty Administrative Board session and curriculum updates have been published." }
+    },
+    "news": {
+      "title": "News From Our Faculty",
+      "lead": "News to keep you informed and inspired — from research achievements to academic partnerships, from student accomplishments to campus life.",
+      "allBtn": "All News",
+      "intro": "From computer engineering to environmental engineering, from chemistry to nuclear energy, the Faculty of Engineering turns the research produced across its 9 departments into value for industry and society.",
+      "quote": "Working with an interdisciplinary research vision since its founding, our Faculty continues to turn the knowledge produced by its faculty members and students into industry partnerships and new technologies.",
+      "tagLabel": "News",
+      "item1": { "category": "Academic", "title": "International AI Collaboration for the Faculty of Engineering", "desc": "Our faculty signed a joint research protocol with three European universities in artificial intelligence and autonomous systems.", "readTime": "3 min read" },
+      "item2": { "category": "Research", "title": "2026 Science and R&D Report in 12 Points", "desc": "The annual report highlights the rise in our faculty's research output and the need for sustainable funding.", "readTime": "5 min read" },
+      "item3": { "category": "Achievement", "title": "Our Students Became Turkey Champions in a Robotics Competition", "desc": "A team of Computer Engineering students won first place in the national robotics competition.", "readTime": "2 min read" },
+      "item4": { "category": "Announcement", "title": "Spring Semester Course Registration Calendar Published", "desc": "2025-2026 Spring semester course registrations will take place through the student information system between February 10-14.", "readTime": "2 min read" },
+      "item5": { "category": "Campus", "title": "New Student Dormitory Opened at Beytepe Campus", "desc": "The new 500-capacity dormitory building opened its doors with modern social areas and study halls.", "readTime": "3 min read" },
+      "item6": { "category": "International", "title": "New Universities Added to the Erasmus+ Exchange Program", "desc": "Our students can now join the exchange program at five new partner universities in Germany and Spain.", "readTime": "2 min read" }
+    },
+    "stats": {
+      "title": "Our Faculty in Numbers",
+      "lead": "We have a strong academic staff, a large student community and active research projects to turn our interdisciplinary research into tangible impact.",
+      "badge": "Our Impact",
+      "label1": "Undergraduate Students",
+      "label2": "Graduate Students",
+      "label3": "Faculty Members",
+      "label4": "Active Projects",
+      "label5": "Total Alumni"
+    },
+    "events": {
+      "title": "Events",
+      "lead": "From career days to academic open houses, from festivals to graduation ceremonies, follow all of our faculty's events right here.",
+      "searchPlaceholder": "Search events…",
+      "filterAll": "All",
+      "filterKariyer": "Career",
+      "filterTanitim": "Open House",
+      "filterFestival": "Festival",
+      "filterToren": "Ceremony",
+      "ctaLabel": "Details",
+      "item1": { "category": "Career", "title": "Engineering Career Days", "location": "Congress Center · 09:00", "desc": "One-on-one meetings with more than 40 companies, internship and job opportunities." },
+      "item2": { "category": "Open House", "title": "Open House Day", "location": "Beytepe Campus · 10:00", "desc": "Laboratory tours, department introductions and student meetups for prospective students." },
+      "item3": { "category": "Festival", "title": "Technology and Innovation Festival", "location": "Faculty of Engineering Garden · 11:00", "desc": "Student project exhibition, robotics demonstrations and entrepreneurship booths." },
+      "item4": { "category": "Ceremony", "title": "Graduation Ceremony", "location": "Congress Center · 15:00", "desc": "Ceremony and official cap-toss for our 2026-2027 graduates." },
+      "item5": { "category": "Career", "title": "Alumni Meetup Day", "location": "Faculty of Engineering Amphitheater · 14:00", "desc": "Career advice and networking opportunities from our alumni engineers." },
+      "item6": { "category": "Festival", "title": "Science Festival Outdoor Event", "location": "Beytepe Campus Square · 12:00", "desc": "An outdoor science and technology themed event organized by student clubs." },
+      "item7": { "category": "Open House", "title": "New Student Orientation Day", "location": "Congress Center · 09:30", "desc": "Orientation and department introduction program for newly enrolled students." }
+    }
+  }
+}

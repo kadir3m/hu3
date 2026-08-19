@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "anasayfa": {
+      "title": "Université Hacettepe, Faculté d'Ingénierie | Accueil",
+      "description": "Site officiel de la Faculté d'Ingénierie de l'Université Hacettepe — départements, laboratoires de recherche, vie étudiante et annonces."
+    },
+    "bolumlerimiz": {
+      "title": "Nos Départements | Faculté d'Ingénierie de l'Université Hacettepe",
+      "description": "Les départements et programmes de troisième cycle de la Faculté d'Ingénierie de l'Université Hacettepe."
+    }
+  },
+  "bolumlerimiz": {
+    "breadcrumb": {
+      "home": "Accueil",
+      "current": "Nos Départements"
+    },
+    "hero": {
+      "eyebrow": "Éducation & Enseignement",
+      "title": "Une Formation d'Ingénierie de Niveau Mondial Répartie en 9 Départements"
+    },
+    "filters": {
+      "all": "Tous",
+      "bilgisayarElektronik": "Informatique & Électronique",
+      "endustri": "Industrie & Gestion",
+      "cevreDoga": "Environnement & Sciences Naturelles",
+      "kimyaEnerji": "Chimie & Énergie"
+    },
+    "dept": {
+      "bilgisayar": { "title": "Génie Informatique", "desc": "Propose un programme solide en intelligence artificielle, génie logiciel et cybersécurité." },
+      "elektrik": { "title": "Génie Électrique et Électronique", "desc": "Offre une formation de licence et de troisième cycle en systèmes de puissance, télécommunications et systèmes embarqués." },
+      "endustri": { "title": "Génie Industriel", "desc": "Propose une formation interdisciplinaire en systèmes de production, optimisation et analyse de données." },
+      "cevre": { "title": "Génie de l'Environnement", "desc": "Se concentre sur la gestion de l'eau et des déchets, la durabilité et l'évaluation d'impact environnemental." },
+      "jeoloji": { "title": "Génie Géologique", "desc": "Spécialisé dans les sciences de la Terre, les ressources minérales et l'étude des risques de catastrophes naturelles." },
+      "maden": { "title": "Génie des Mines", "desc": "Forme dans l'exploitation minière, le traitement du minerai et les technologies de forage." },
+      "gida": { "title": "Génie Alimentaire", "desc": "Mène des recherches sur la sécurité alimentaire, les technologies de transformation et la biotechnologie." },
+      "kimya": { "title": "Génie Chimique", "desc": "Dispose d'une solide infrastructure de laboratoire pour la conception de procédés, la science des matériaux et la conversion d'énergie." },
+      "nukleer": { "title": "Génie de l'Énergie Nucléaire", "desc": "Un département spécialisé dans les systèmes d'énergie nucléaire, la radioprotection et les politiques énergétiques." }
+    },
+    "cta": {
+      "title": "En Savoir Plus sur Nos Programmes",
+      "lead": "Consultez les pages des départements pour les programmes, les quotas et les conditions d'admission.",
+      "calendarBtn": "Calendrier Académique",
+      "contactBtn": "Contacter un Conseiller"
+    }
+  },
+  "common": {
+    "skipLink": "Aller au contenu",
+    "utility": {
+      "sbs": "Système d'Information Étudiant",
+      "email": "Messagerie du Personnel",
+      "library": "Bibliothèque"
+    },
+    "nav": {
+      "kurumsal": "À propos",
+      "kurumsalColUniversite": "Université",
+      "kurumsalColKurumsal": "Institutionnel",
+      "kurumsalMenu": {
+        "tarihce": "Histoire",
+        "dekanlik": "Décanat et Administration",
+        "yerleske": "Notre Campus",
+        "sayilarla": "Hacettepe en Chiffres",
+        "kimlik": "Identité Institutionnelle",
+        "iletisimBilgileri": "Coordonnées"
+      },
+      "bolumlerimiz": "Départements",
+      "duyurular": "Annonces",
+      "duyurularCol1": "Types d'Annonces",
+      "duyurularCol2": "Accès Rapide",
+      "duyurularMenu": {
+        "akademik": "Annonces Académiques",
+        "sinav": "Annonces d'Examens",
+        "idari": "Annonces Administratives",
+        "tumDuyurular": "Toutes les Annonces",
+        "arsiv": "Archives des Annonces",
+        "takvim": "Calendrier Académique"
+      },
+      "belgeVeFormlar": "Documents et Formulaires",
+      "galeri": "Galerie",
+      "galeriCol1": "Photos",
+      "galeriCol2": "Médias",
+      "galeriMenu": {
+        "kampus": "Galerie du Campus",
+        "etkinlik": "Galerie des Événements",
+        "video": "Galerie Vidéo",
+        "ogrenciHayati": "Vie Étudiante"
+      },
+      "haberler": "Actualités",
+      "etkinlikler": "Événements",
+      "iletisim": "Contact"
+    },
+    "header": {
+      "girisBtn": "Connexion",
+      "searchAria": "Rechercher",
+      "menuAria": "Ouvrir/fermer le menu"
+    },
+    "search": {
+      "placeholder": "Rechercher sur le site : département, enseignant, annonce…",
+      "ariaLabel": "Recherche sur le site",
+      "button": "Rechercher",
+      "closeAria": "Fermer la recherche",
+      "populer": "Populaire :",
+      "suggest": {
+        "bolumlerimiz": "Départements",
+        "takvim": "Calendrier Académique",
+        "yurt": "Demande de Résidence",
+        "iletisim": "Contact"
+      }
+    },
+    "footer": {
+      "brandName": "Faculté d'Ingénierie",
+      "address": "Université Hacettepe, Campus de Beytepe, 06800 Çankaya/Ankara, Turquie",
+      "colUniversite": {
+        "title": "Université",
+        "hakkimizda": "À propos de nous",
+        "dekanlik": "Décanat",
+        "yerleske": "Campus"
+      },
+      "colAkademik": {
+        "title": "Académique",
+        "bolumlerimiz": "Départements",
+        "egitimProgramlari": "Programmes d'Études",
+        "takvim": "Calendrier Académique"
+      },
+      "colOgrenciler": {
+        "title": "Étudiants",
+        "ogrenciHayati": "Vie Étudiante",
+        "yurtlar": "Résidences",
+        "kariyerMerkezi": "Centre de Carrière"
+      },
+      "colIletisim": {
+        "title": "Contact",
+        "iletisimFormu": "Formulaire de Contact"
+      },
+      "copyright": "© 2026 Université Hacettepe, Faculté d'Ingénierie. Ceci est un exemple de conception à but éducatif.",
+      "gizlilik": "Confidentialité",
+      "erisilebilirlik": "Accessibilité",
+      "siteHaritasi": "Plan du Site"
+    },
+    "backToTop": {
+      "aria": "Retour en haut"
+    }
+  },
+  "index": {
+    "hero": {
+      "eyebrow": "Université Hacettepe",
+      "title": "Là où la Science, la Recherche et l'Innovation se Rencontrent en Ingénierie",
+      "lead": "La Faculté d'Ingénierie forme les ingénieurs de demain avec 9 départements, plus de 50 laboratoires de recherche et de solides partenariats industriels.",
+      "ctaExplore": "Découvrir les Départements",
+      "ctaAbout": "Découvrir la Faculté",
+      "searchPlaceholder": "Rechercher un département, un laboratoire ou une annonce…",
+      "searchButton": "Rechercher"
+    },
+    "departments": {
+      "title": "Nos Départements",
+      "allLink": "Tous les départements",
+      "dept1": "Génie Informatique",
+      "dept2": "Génie Électrique et Électronique",
+      "dept3": "Génie Industriel",
+      "dept4": "Génie de l'Environnement",
+      "dept5": "Génie Géologique",
+      "dept6": "Génie des Mines",
+      "dept7": "Génie Alimentaire",
+      "dept8": "Génie Chimique",
+      "dept9": "Génie de l'Énergie Nucléaire"
+    },
+    "discover": {
+      "eyebrow": "Notre Univers Académique et de Recherche",
+      "title": "Découvrir Notre Faculté",
+      "lead": "De nos programmes d'études à nos infrastructures de recherche, de notre corps enseignant à nos projets, retrouvez ici tout ce que notre faculté propose.",
+      "card1": { "badge": "9 Départements", "title": "Nos Départements", "desc": "Nos départements de génie informatique, électrique-électronique, industriel, environnemental, géologique, des mines, alimentaire, chimique et de l'énergie nucléaire.", "link": "Parcourir les Départements" },
+      "card2": { "badge": "3 Niveaux", "title": "Programmes d'Études", "desc": "Licence, Master, Doctorat, Double Diplôme, Erasmus et stage d'été obligatoire.", "link": "Découvrir les Programmes" },
+      "card3": { "badge": "50+ Labos", "title": "Laboratoires de Recherche", "desc": "Laboratoires d'intelligence artificielle, de génie biomédical, de conception de circuits VLSI et de science des matériaux.", "link": "Découvrir les Laboratoires" },
+      "card4": { "badge": "183 Enseignants", "title": "Corps Enseignant", "desc": "Découvrez notre solide corps académique de professeurs, maîtres de conférences et assistants de recherche.", "link": "Voir le Corps Enseignant" },
+      "card5": { "badge": "À Comité de Lecture", "title": "Revues", "desc": "Accédez à la Revue des Sciences de l'Ingénieur et aux autres publications académiques à comité de lecture de nos départements.", "link": "Ouvrir les Revues" },
+      "card6": { "badge": "103 Projets", "title": "Projets et Collaborations", "desc": "Recherches financées par TÜBİTAK, consortiums Horizon Europe et collaborations R&D avec l'industrie.", "link": "Voir les Projets" }
+    },
+    "announcements": {
+      "title": "Annonces",
+      "allLink": "Toutes les annonces",
+      "filterAll": "Toutes les Annonces",
+      "filterStudent": "Étudiants",
+      "filterStaff": "Personnel",
+      "card1": { "topic": "Inscription", "title": "Ouverture des Candidatures pour la Mineure / Double Diplôme du Semestre de Printemps", "desc": "Les candidatures pour les programmes de mineure et de double diplôme seront reçues via le système d'information étudiant du 10 au 20 août." },
+      "card2": { "topic": "Examens", "title": "Publication du Calendrier des Examens de Rattrapage", "desc": "Le calendrier des examens de rattrapage du semestre de printemps 2025-2026 est disponible sur le système d'information étudiant." },
+      "card3": { "topic": "Bourse", "title": "Résultats de la Bourse de Restauration Annoncés", "desc": "Les résultats de la demande de bourse de restauration du semestre de printemps ont été publiés via le système d'information étudiant." },
+      "card4": { "topic": "Stage", "title": "Ouverture des Candidatures pour le Stage d'Été Obligatoire", "desc": "Les entreprises d'accueil pour les stages doivent être identifiées et signalées à la Commission des Stages." },
+      "card5": { "topic": "Annonce Académique", "title": "Séminaire d'Information sur les Candidatures de Soutien aux Projets BAP et TÜBİTAK", "desc": "Le séminaire de promotion des projets de recherche organisé par le Décanat se tiendra dans la salle de conférence de la Faculté." },
+      "card6": { "topic": "Administratif", "title": "Décisions des Réunions du Conseil de Faculté et du Conseil d'Administration", "desc": "Les décisions récentes du Conseil d'Administration de la Faculté et les mises à jour du programme ont été publiées." }
+    },
+    "news": {
+      "title": "Actualités de Notre Faculté",
+      "lead": "Des actualités pour vous informer et vous inspirer — des succès de recherche aux partenariats académiques, des réussites étudiantes à la vie sur le campus.",
+      "allBtn": "Toutes les Actualités",
+      "intro": "Du génie informatique au génie de l'environnement, de la chimie à l'énergie nucléaire, la Faculté d'Ingénierie transforme la recherche produite dans ses 9 départements en valeur pour l'industrie et la société.",
+      "quote": "Animée depuis sa création par une vision de recherche interdisciplinaire, notre Faculté continue de transformer le savoir produit par ses enseignants et ses étudiants en partenariats industriels et en nouvelles technologies.",
+      "tagLabel": "Actualité",
+      "item1": { "category": "Académique", "title": "Collaboration Internationale en Intelligence Artificielle pour la Faculté d'Ingénierie", "desc": "Notre faculté a signé un protocole de recherche conjoint avec trois universités européennes en intelligence artificielle et systèmes autonomes.", "readTime": "3 min de lecture" },
+      "item2": { "category": "Recherche", "title": "Le Rapport Science et R&D 2026 en 12 Points", "desc": "Le rapport annuel met en évidence la hausse de la production de recherche de notre faculté et le besoin d'un financement durable.", "readTime": "5 min de lecture" },
+      "item3": { "category": "Réussite", "title": "Nos Étudiants Champions de Turquie en Robotique", "desc": "Une équipe d'étudiants en génie informatique a remporté la première place du concours national de robotique.", "readTime": "2 min de lecture" },
+      "item4": { "category": "Annonce", "title": "Publication du Calendrier des Inscriptions du Semestre de Printemps", "desc": "Les inscriptions aux cours du semestre de printemps 2025-2026 se feront via le système d'information étudiant du 10 au 14 février.", "readTime": "2 min de lecture" },
+      "item5": { "category": "Campus", "title": "Nouvelle Résidence Étudiante Ouverte au Campus de Beytepe", "desc": "Le nouveau bâtiment de résidence de 500 places a ouvert ses portes avec des espaces sociaux modernes et des salles d'étude.", "readTime": "3 min de lecture" },
+      "item6": { "category": "International", "title": "Nouvelles Universités Ajoutées au Programme d'Échange Erasmus+", "desc": "Nos étudiants peuvent désormais rejoindre le programme d'échange dans cinq nouvelles universités partenaires en Allemagne et en Espagne.", "readTime": "2 min de lecture" }
+    },
+    "stats": {
+      "title": "Notre Faculté en Chiffres",
+      "lead": "Nous disposons d'un corps académique solide, d'une large communauté étudiante et de projets de recherche actifs pour transformer nos recherches interdisciplinaires en impact concret.",
+      "badge": "Notre Impact",
+      "label1": "Étudiants en Licence",
+      "label2": "Étudiants en Master/Doctorat",
+      "label3": "Enseignants-Chercheurs",
+      "label4": "Projets Actifs",
+      "label5": "Total des Diplômés"
+    },
+    "events": {
+      "title": "Événements",
+      "lead": "Des journées carrière aux journées portes ouvertes académiques, des festivals aux cérémonies de remise de diplômes, suivez ici tous les événements de notre faculté.",
+      "searchPlaceholder": "Rechercher un événement…",
+      "filterAll": "Tous",
+      "filterKariyer": "Carrière",
+      "filterTanitim": "Portes Ouvertes",
+      "filterFestival": "Festival",
+      "filterToren": "Cérémonie",
+      "ctaLabel": "Détails",
+      "item1": { "category": "Carrière", "title": "Journées Carrière d'Ingénierie", "location": "Centre des Congrès · 09h00", "desc": "Entretiens individuels avec plus de 40 entreprises, opportunités de stage et d'emploi." },
+      "item2": { "category": "Portes Ouvertes", "title": "Journée Portes Ouvertes", "location": "Campus de Beytepe · 10h00", "desc": "Visites de laboratoires, présentations des départements et rencontres étudiantes pour les futurs candidats." },
+      "item3": { "category": "Festival", "title": "Festival de la Technologie et de l'Innovation", "location": "Jardin de la Faculté d'Ingénierie · 11h00", "desc": "Exposition de projets étudiants, démonstrations de robotique et stands d'entrepreneuriat." },
+      "item4": { "category": "Cérémonie", "title": "Cérémonie de Remise des Diplômes", "location": "Centre des Congrès · 15h00", "desc": "Cérémonie officielle pour nos diplômés de la promotion 2026-2027." },
+      "item5": { "category": "Carrière", "title": "Journée de Rencontre avec les Anciens Élèves", "location": "Amphithéâtre de la Faculté d'Ingénierie · 14h00", "desc": "Conseils de carrière et opportunités de réseautage avec nos ingénieurs diplômés." },
+      "item6": { "category": "Festival", "title": "Fête de la Science en Plein Air", "location": "Place du Campus de Beytepe · 12h00", "desc": "Un événement en plein air sur le thème de la science et de la technologie organisé par les clubs étudiants." },
+      "item7": { "category": "Portes Ouvertes", "title": "Journée d'Orientation des Nouveaux Étudiants", "location": "Centre des Congrès · 09h30", "desc": "Programme d'orientation et de présentation des départements pour les étudiants nouvellement inscrits." }
+    }
+  }
+}

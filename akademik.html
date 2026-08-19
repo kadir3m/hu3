@@ -8,20 +8,26 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-page="bolumlerimiz">
-  <a href="#main" class="skip-link">İçeriğe geç</a>
+  <a href="#main" class="skip-link" data-i18n="common.skipLink">İçeriğe geç</a>
 
   <div class="utility-bar">
     <div class="container">
       <nav aria-label="Hızlı erişim">
         <ul>
-          <li><a href="#">Öğrenci Bilgi Sistemi</a></li>
-          <li><a href="#">Personel E-postası</a></li>
-          <li><a href="#">Kütüphane</a></li>
+          <li><a href="#" data-i18n="common.utility.sbs">Öğrenci Bilgi Sistemi</a></li>
+          <li><a href="#" data-i18n="common.utility.email">Personel E-postası</a></li>
+          <li><a href="#" data-i18n="common.utility.library">Kütüphane</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
-        <button type="button" class="active">TR</button>
-        <button type="button">EN</button>
+        <button type="button" class="lang-current" aria-haspopup="listbox" aria-expanded="false">
+          <span class="flag flag-tr" aria-hidden="true"></span> TR
+        </button>
+        <ul class="lang-options" role="listbox">
+          <li role="option" data-lang="tr" data-flag="flag-tr" class="active"><span class="flag flag-tr" aria-hidden="true"></span> TR</li>
+          <li role="option" data-lang="en" data-flag="flag-gb"><span class="flag flag-gb" aria-hidden="true"></span> EN</li>
+          <li role="option" data-lang="fr" data-flag="flag-fr"><span class="flag flag-fr" aria-hidden="true"></span> FR</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -40,90 +46,90 @@
         <ul>
           <li data-menu-item>
             <a href="hakkimizda.html" class="nav-link" data-nav-key="kurumsal" aria-expanded="false">
-              Kurumsal <span class="nav-caret">▾</span>
+              <span data-i18n="common.nav.kurumsal">Kurumsal</span> <span class="nav-caret">▾</span>
             </a>
             <div class="mega-menu">
               <div>
-                <span class="mega-col-title">Üniversite</span>
-                <a href="hakkimizda.html">Tarihçe</a>
-                <a href="hakkimizda.html#dekanlik">Dekanlık ve Yönetim</a>
-                <a href="hakkimizda.html#yerleske">Yerleşkemiz</a>
+                <span class="mega-col-title" data-i18n="common.nav.kurumsalColUniversite">Üniversite</span>
+                <a href="hakkimizda.html" data-i18n="common.nav.kurumsalMenu.tarihce">Tarihçe</a>
+                <a href="hakkimizda.html#dekanlik" data-i18n="common.nav.kurumsalMenu.dekanlik">Dekanlık ve Yönetim</a>
+                <a href="hakkimizda.html#yerleske" data-i18n="common.nav.kurumsalMenu.yerleske">Yerleşkemiz</a>
               </div>
               <div>
-                <span class="mega-col-title">Kurumsal</span>
-                <a href="hakkimizda.html#sayilarla">Sayılarla Hacettepe</a>
-                <a href="hakkimizda.html#kimlik">Kurumsal Kimlik</a>
-                <a href="iletisim.html">İletişim Bilgileri</a>
+                <span class="mega-col-title" data-i18n="common.nav.kurumsalColKurumsal">Kurumsal</span>
+                <a href="hakkimizda.html#sayilarla" data-i18n="common.nav.kurumsalMenu.sayilarla">Sayılarla Hacettepe</a>
+                <a href="hakkimizda.html#kimlik" data-i18n="common.nav.kurumsalMenu.kimlik">Kurumsal Kimlik</a>
+                <a href="iletisim.html" data-i18n="common.nav.kurumsalMenu.iletisimBilgileri">İletişim Bilgileri</a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="akademik.html" class="nav-link" data-nav-key="bolumlerimiz">Bölümlerimiz</a>
+            <a href="akademik.html" class="nav-link" data-nav-key="bolumlerimiz" data-i18n="common.nav.bolumlerimiz">Bölümlerimiz</a>
           </li>
 
           <li data-menu-item>
             <a href="index.html#duyurular" class="nav-link" data-nav-key="duyurular" aria-expanded="false">
-              Duyurular <span class="nav-caret">▾</span>
+              <span data-i18n="common.nav.duyurular">Duyurular</span> <span class="nav-caret">▾</span>
             </a>
             <div class="mega-menu">
               <div>
-                <span class="mega-col-title">Duyuru Türleri</span>
-                <a href="index.html#duyurular">Akademik Duyurular</a>
-                <a href="index.html#duyurular">Sınav Duyuruları</a>
-                <a href="index.html#duyurular">İdari Duyurular</a>
+                <span class="mega-col-title" data-i18n="common.nav.duyurularCol1">Duyuru Türleri</span>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.akademik">Akademik Duyurular</a>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.sinav">Sınav Duyuruları</a>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.idari">İdari Duyurular</a>
               </div>
               <div>
-                <span class="mega-col-title">Hızlı Erişim</span>
-                <a href="index.html#duyurular">Tüm Duyurular</a>
-                <a href="#">Duyuru Arşivi</a>
-                <a href="#">Akademik Takvim</a>
+                <span class="mega-col-title" data-i18n="common.nav.duyurularCol2">Hızlı Erişim</span>
+                <a href="index.html#duyurular" data-i18n="common.nav.duyurularMenu.tumDuyurular">Tüm Duyurular</a>
+                <a href="#" data-i18n="common.nav.duyurularMenu.arsiv">Duyuru Arşivi</a>
+                <a href="#" data-i18n="common.nav.duyurularMenu.takvim">Akademik Takvim</a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="belge-ve-formlar.html" class="nav-link" data-nav-key="belge-ve-formlar">Belge ve Formlar</a>
+            <a href="belge-ve-formlar.html" class="nav-link" data-nav-key="belge-ve-formlar" data-i18n="common.nav.belgeVeFormlar">Belge ve Formlar</a>
           </li>
 
           <li data-menu-item>
             <a href="ogrenci-hayati.html#galeri" class="nav-link" data-nav-key="galeri" aria-expanded="false">
-              Galeri <span class="nav-caret">▾</span>
+              <span data-i18n="common.nav.galeri">Galeri</span> <span class="nav-caret">▾</span>
             </a>
             <div class="mega-menu">
               <div>
-                <span class="mega-col-title">Görseller</span>
-                <a href="ogrenci-hayati.html#galeri">Kampüs Galerisi</a>
-                <a href="ogrenci-hayati.html#galeri">Etkinlik Galerisi</a>
+                <span class="mega-col-title" data-i18n="common.nav.galeriCol1">Görseller</span>
+                <a href="ogrenci-hayati.html#galeri" data-i18n="common.nav.galeriMenu.kampus">Kampüs Galerisi</a>
+                <a href="ogrenci-hayati.html#galeri" data-i18n="common.nav.galeriMenu.etkinlik">Etkinlik Galerisi</a>
               </div>
               <div>
-                <span class="mega-col-title">Medya</span>
-                <a href="#">Video Galerisi</a>
-                <a href="ogrenci-hayati.html">Öğrenci Hayatı</a>
+                <span class="mega-col-title" data-i18n="common.nav.galeriCol2">Medya</span>
+                <a href="#" data-i18n="common.nav.galeriMenu.video">Video Galerisi</a>
+                <a href="ogrenci-hayati.html" data-i18n="common.nav.galeriMenu.ogrenciHayati">Öğrenci Hayatı</a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="index.html#duyurular" class="nav-link" data-nav-key="haberler">Haberler</a>
+            <a href="index.html#duyurular" class="nav-link" data-nav-key="haberler" data-i18n="common.nav.haberler">Haberler</a>
           </li>
 
           <li>
-            <a href="index.html#etkinlikler" class="nav-link" data-nav-key="etkinlikler">Etkinlikler</a>
+            <a href="index.html#etkinlikler" class="nav-link" data-nav-key="etkinlikler" data-i18n="common.nav.etkinlikler">Etkinlikler</a>
           </li>
 
           <li>
-            <a href="iletisim.html" class="nav-link" data-nav-key="iletisim">İletişim</a>
+            <a href="iletisim.html" class="nav-link" data-nav-key="iletisim" data-i18n="common.nav.iletisim">İletişim</a>
           </li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn search-desktop" data-search-open aria-label="Ara">
+        <button class="icon-btn search-desktop" data-search-open aria-label="Ara" data-i18n-aria-label="common.header.searchAria">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
-        <a href="#" class="btn btn-outline-dark" style="padding:10px 20px;">Giriş</a>
-        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <a href="#" class="btn btn-outline-dark" style="padding:10px 20px;" data-i18n="common.header.girisBtn">Giriş</a>
+        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false" data-i18n-aria-label="common.header.menuAria">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -133,17 +139,17 @@
   <div class="search-overlay">
     <div class="search-panel">
       <div class="container">
-        <button class="search-close" aria-label="Aramayı kapat">&times;</button>
+        <button class="search-close" aria-label="Aramayı kapat" data-i18n-aria-label="common.search.closeAria">&times;</button>
         <form role="search">
-          <input type="search" placeholder="Sitede ara: bölüm, akademisyen, duyuru…" aria-label="Site içi arama" />
-          <button type="submit" class="search-submit">Ara</button>
+          <input type="search" placeholder="Sitede ara: bölüm, akademisyen, duyuru…" aria-label="Site içi arama" data-i18n-placeholder="common.search.placeholder" data-i18n-aria-label="common.search.ariaLabel" />
+          <button type="submit" class="search-submit" data-i18n="common.search.button">Ara</button>
         </form>
         <div class="search-suggest">
-          <span>Popüler:</span>
-          <a href="akademik.html">Bölümlerimiz</a>
-          <a href="#">Akademik Takvim</a>
-          <a href="ogrenci-hayati.html">Yurt Başvurusu</a>
-          <a href="iletisim.html">İletişim</a>
+          <span data-i18n="common.search.populer">Popüler:</span>
+          <a href="akademik.html" data-i18n="common.search.suggest.bolumlerimiz">Bölümlerimiz</a>
+          <a href="#" data-i18n="common.search.suggest.takvim">Akademik Takvim</a>
+          <a href="ogrenci-hayati.html" data-i18n="common.search.suggest.yurt">Yurt Başvurusu</a>
+          <a href="iletisim.html" data-i18n="common.search.suggest.iletisim">İletişim</a>
         </div>
       </div>
     </div>
@@ -152,80 +158,80 @@
   <main id="main">
     <section class="page-header">
       <div class="container">
-        <div class="breadcrumb"><a href="index.html">Anasayfa</a> / Bölümlerimiz</div>
-        <span class="eyebrow">Eğitim &amp; Öğretim</span>
-        <h1>9 Bölümde Dünya Standartlarında Mühendislik Eğitimi</h1>
+        <div class="breadcrumb"><a href="index.html" data-i18n="bolumlerimiz.breadcrumb.home">Anasayfa</a> / <span data-i18n="bolumlerimiz.breadcrumb.current">Bölümlerimiz</span></div>
+        <span class="eyebrow" data-i18n="bolumlerimiz.hero.eyebrow">Eğitim &amp; Öğretim</span>
+        <h1 data-i18n="bolumlerimiz.hero.title">9 Bölümde Dünya Standartlarında Mühendislik Eğitimi</h1>
       </div>
     </section>
 
     <section class="container">
       <div class="filter-bar" data-filter-for="#units-grid">
-        <button class="filter-chip active" data-filter="all">Tümü</button>
-        <button class="filter-chip" data-filter="bilgisayar-elektronik">Bilgisayar &amp; Elektronik</button>
-        <button class="filter-chip" data-filter="endustri">Endüstri &amp; Yönetim</button>
-        <button class="filter-chip" data-filter="cevre-doga">Çevre &amp; Doğa Bilimleri</button>
-        <button class="filter-chip" data-filter="kimya-enerji">Kimya &amp; Enerji</button>
+        <button class="filter-chip active" data-filter="all" data-i18n="bolumlerimiz.filters.all">Tümü</button>
+        <button class="filter-chip" data-filter="bilgisayar-elektronik" data-i18n="bolumlerimiz.filters.bilgisayarElektronik">Bilgisayar &amp; Elektronik</button>
+        <button class="filter-chip" data-filter="endustri" data-i18n="bolumlerimiz.filters.endustri">Endüstri &amp; Yönetim</button>
+        <button class="filter-chip" data-filter="cevre-doga" data-i18n="bolumlerimiz.filters.cevreDoga">Çevre &amp; Doğa Bilimleri</button>
+        <button class="filter-chip" data-filter="kimya-enerji" data-i18n="bolumlerimiz.filters.kimyaEnerji">Kimya &amp; Enerji</button>
       </div>
 
       <div class="units-grid" id="units-grid">
         <div class="unit-card reveal" data-category="bilgisayar-elektronik">
-          <span class="unit-tag">Bilgisayar &amp; Elektronik</span>
-          <h3>Bilgisayar Mühendisliği</h3>
-          <p>Yapay zeka, yazılım mühendisliği ve siber güvenlik alanlarında güçlü bir müfredat sunar.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.bilgisayarElektronik">Bilgisayar &amp; Elektronik</span>
+          <h3 data-i18n="bolumlerimiz.dept.bilgisayar.title">Bilgisayar Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.bilgisayar.desc">Yapay zeka, yazılım mühendisliği ve siber güvenlik alanlarında güçlü bir müfredat sunar.</p>
         </div>
         <div class="unit-card reveal" data-category="bilgisayar-elektronik">
-          <span class="unit-tag">Bilgisayar &amp; Elektronik</span>
-          <h3>Elektrik ve Elektronik Mühendisliği</h3>
-          <p>Güç sistemleri, haberleşme ve gömülü sistemler alanlarında lisans ve lisansüstü eğitim verir.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.bilgisayarElektronik">Bilgisayar &amp; Elektronik</span>
+          <h3 data-i18n="bolumlerimiz.dept.elektrik.title">Elektrik ve Elektronik Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.elektrik.desc">Güç sistemleri, haberleşme ve gömülü sistemler alanlarında lisans ve lisansüstü eğitim verir.</p>
         </div>
 
         <div class="unit-card reveal" data-category="endustri">
-          <span class="unit-tag">Endüstri &amp; Yönetim</span>
-          <h3>Endüstri Mühendisliği</h3>
-          <p>Üretim sistemleri, optimizasyon ve veri analitiği alanlarında disiplinler arası bir eğitim sunar.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.endustri">Endüstri &amp; Yönetim</span>
+          <h3 data-i18n="bolumlerimiz.dept.endustri.title">Endüstri Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.endustri.desc">Üretim sistemleri, optimizasyon ve veri analitiği alanlarında disiplinler arası bir eğitim sunar.</p>
         </div>
 
         <div class="unit-card reveal" data-category="cevre-doga">
-          <span class="unit-tag">Çevre &amp; Doğa Bilimleri</span>
-          <h3>Çevre Mühendisliği</h3>
-          <p>Su ve atık yönetimi, sürdürülebilirlik ve çevresel etki değerlendirmesi üzerine çalışır.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.cevreDoga">Çevre &amp; Doğa Bilimleri</span>
+          <h3 data-i18n="bolumlerimiz.dept.cevre.title">Çevre Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.cevre.desc">Su ve atık yönetimi, sürdürülebilirlik ve çevresel etki değerlendirmesi üzerine çalışır.</p>
         </div>
         <div class="unit-card reveal" data-category="cevre-doga">
-          <span class="unit-tag">Çevre &amp; Doğa Bilimleri</span>
-          <h3>Jeoloji Mühendisliği</h3>
-          <p>Yer bilimleri, maden kaynakları ve doğal afet risklerinin incelenmesi alanında uzmanlaşır.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.cevreDoga">Çevre &amp; Doğa Bilimleri</span>
+          <h3 data-i18n="bolumlerimiz.dept.jeoloji.title">Jeoloji Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.jeoloji.desc">Yer bilimleri, maden kaynakları ve doğal afet risklerinin incelenmesi alanında uzmanlaşır.</p>
         </div>
         <div class="unit-card reveal" data-category="cevre-doga">
-          <span class="unit-tag">Çevre &amp; Doğa Bilimleri</span>
-          <h3>Maden Mühendisliği</h3>
-          <p>Maden işletmeciliği, cevher hazırlama ve sondaj teknolojileri alanında eğitim verir.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.cevreDoga">Çevre &amp; Doğa Bilimleri</span>
+          <h3 data-i18n="bolumlerimiz.dept.maden.title">Maden Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.maden.desc">Maden işletmeciliği, cevher hazırlama ve sondaj teknolojileri alanında eğitim verir.</p>
         </div>
         <div class="unit-card reveal" data-category="cevre-doga">
-          <span class="unit-tag">Çevre &amp; Doğa Bilimleri</span>
-          <h3>Gıda Mühendisliği</h3>
-          <p>Gıda güvenliği, işleme teknolojileri ve biyoteknoloji alanlarında araştırma yürütür.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.cevreDoga">Çevre &amp; Doğa Bilimleri</span>
+          <h3 data-i18n="bolumlerimiz.dept.gida.title">Gıda Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.gida.desc">Gıda güvenliği, işleme teknolojileri ve biyoteknoloji alanlarında araştırma yürütür.</p>
         </div>
 
         <div class="unit-card reveal" data-category="kimya-enerji">
-          <span class="unit-tag">Kimya &amp; Enerji</span>
-          <h3>Kimya Mühendisliği</h3>
-          <p>Proses tasarımı, malzeme bilimi ve enerji dönüşümü konularında güçlü bir laboratuvar altyapısına sahiptir.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.kimyaEnerji">Kimya &amp; Enerji</span>
+          <h3 data-i18n="bolumlerimiz.dept.kimya.title">Kimya Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.kimya.desc">Proses tasarımı, malzeme bilimi ve enerji dönüşümü konularında güçlü bir laboratuvar altyapısına sahiptir.</p>
         </div>
         <div class="unit-card reveal" data-category="kimya-enerji">
-          <span class="unit-tag">Kimya &amp; Enerji</span>
-          <h3>Nükleer Enerji Mühendisliği</h3>
-          <p>Nükleer enerji sistemleri, radyasyon güvenliği ve enerji politikaları alanında uzmanlaşmış bir bölümdür.</p>
+          <span class="unit-tag" data-i18n="bolumlerimiz.filters.kimyaEnerji">Kimya &amp; Enerji</span>
+          <h3 data-i18n="bolumlerimiz.dept.nukleer.title">Nükleer Enerji Mühendisliği</h3>
+          <p data-i18n="bolumlerimiz.dept.nukleer.desc">Nükleer enerji sistemleri, radyasyon güvenliği ve enerji politikaları alanında uzmanlaşmış bir bölümdür.</p>
         </div>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container">
-        <h2>Programlar Hakkında Daha Fazla Bilgi Alın</h2>
-        <p>Bölüm müfredatları, kontenjanlar ve başvuru koşulları için bölüm sayfalarını ziyaret edin.</p>
+        <h2 data-i18n="bolumlerimiz.cta.title">Programlar Hakkında Daha Fazla Bilgi Alın</h2>
+        <p data-i18n="bolumlerimiz.cta.lead">Bölüm müfredatları, kontenjanlar ve başvuru koşulları için bölüm sayfalarını ziyaret edin.</p>
         <div class="cta-actions">
-          <a href="#" class="btn btn-primary">Akademik Takvim</a>
-          <a href="iletisim.html" class="btn btn-outline">Danışmanlıkla İletişime Geç</a>
+          <a href="#" class="btn btn-primary" data-i18n="bolumlerimiz.cta.calendarBtn">Akademik Takvim</a>
+          <a href="iletisim.html" class="btn btn-outline" data-i18n="bolumlerimiz.cta.contactBtn">Danışmanlıkla İletişime Geç</a>
         </div>
       </div>
     </section>
@@ -234,8 +240,8 @@
   <footer class="site-footer">
     <div class="container footer-top">
       <div class="footer-brand">
-        <span class="brand-name">Mühendislik Fakültesi</span>
-        <p>Hacettepe Üniversitesi, Beytepe Kampüsü, 06800 Çankaya/Ankara</p>
+        <span class="brand-name" data-i18n="common.footer.brandName">Mühendislik Fakültesi</span>
+        <p data-i18n="common.footer.address">Hacettepe Üniversitesi, Beytepe Kampüsü, 06800 Çankaya/Ankara</p>
         <div class="social-row">
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
@@ -244,52 +250,53 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Üniversite</h4>
+        <h4 data-i18n="common.footer.colUniversite.title">Üniversite</h4>
         <ul>
-          <li><a href="hakkimizda.html">Hakkımızda</a></li>
-          <li><a href="hakkimizda.html#dekanlik">Dekanlık</a></li>
-          <li><a href="hakkimizda.html#yerleske">Yerleşke</a></li>
+          <li><a href="hakkimizda.html" data-i18n="common.footer.colUniversite.hakkimizda">Hakkımızda</a></li>
+          <li><a href="hakkimizda.html#dekanlik" data-i18n="common.footer.colUniversite.dekanlik">Dekanlık</a></li>
+          <li><a href="hakkimizda.html#yerleske" data-i18n="common.footer.colUniversite.yerleske">Yerleşke</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Akademik</h4>
+        <h4 data-i18n="common.footer.colAkademik.title">Akademik</h4>
         <ul>
-          <li><a href="akademik.html">Bölümlerimiz</a></li>
-          <li><a href="akademik.html">Eğitim Programları</a></li>
-          <li><a href="#">Akademik Takvim</a></li>
+          <li><a href="akademik.html" data-i18n="common.footer.colAkademik.bolumlerimiz">Bölümlerimiz</a></li>
+          <li><a href="akademik.html" data-i18n="common.footer.colAkademik.egitimProgramlari">Eğitim Programları</a></li>
+          <li><a href="#" data-i18n="common.footer.colAkademik.takvim">Akademik Takvim</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Öğrenciler</h4>
+        <h4 data-i18n="common.footer.colOgrenciler.title">Öğrenciler</h4>
         <ul>
-          <li><a href="ogrenci-hayati.html">Öğrenci Hayatı</a></li>
-          <li><a href="ogrenci-hayati.html">Yurtlar</a></li>
-          <li><a href="#">Kariyer Merkezi</a></li>
+          <li><a href="ogrenci-hayati.html" data-i18n="common.footer.colOgrenciler.ogrenciHayati">Öğrenci Hayatı</a></li>
+          <li><a href="ogrenci-hayati.html" data-i18n="common.footer.colOgrenciler.yurtlar">Yurtlar</a></li>
+          <li><a href="#" data-i18n="common.footer.colOgrenciler.kariyerMerkezi">Kariyer Merkezi</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>İletişim</h4>
+        <h4 data-i18n="common.footer.colIletisim.title">İletişim</h4>
         <ul>
           <li><a href="tel:+903123051000">+90 (312) 305 10 00</a></li>
           <li><a href="mailto:info@hacettepe.edu.tr">info@hacettepe.edu.tr</a></li>
-          <li><a href="iletisim.html">İletişim Formu</a></li>
+          <li><a href="iletisim.html" data-i18n="common.footer.colIletisim.iletisimFormu">İletişim Formu</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>&copy; 2026 Hacettepe Üniversitesi Mühendislik Fakültesi. Bu, eğitim amaçlı bir tasarım örneğidir.</span>
+      <span data-i18n="common.footer.copyright">&copy; 2026 Hacettepe Üniversitesi Mühendislik Fakültesi. Bu, eğitim amaçlı bir tasarım örneğidir.</span>
       <ul>
-        <li><a href="#">Gizlilik</a></li>
-        <li><a href="#">Erişilebilirlik</a></li>
-        <li><a href="#">Site Haritası</a></li>
+        <li><a href="#" data-i18n="common.footer.gizlilik">Gizlilik</a></li>
+        <li><a href="#" data-i18n="common.footer.erisilebilirlik">Erişilebilirlik</a></li>
+        <li><a href="#" data-i18n="common.footer.siteHaritasi">Site Haritası</a></li>
       </ul>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Yukarı çık">
+  <button class="back-to-top" aria-label="Yukarı çık" data-i18n-aria-label="common.backToTop.aria">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
   </button>
 
+  <script src="js/i18n.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

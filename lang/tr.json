@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "anasayfa": {
+      "title": "Hacettepe Üniversitesi Mühendislik Fakültesi | Anasayfa",
+      "description": "Hacettepe Üniversitesi Mühendislik Fakültesi resmi web sitesi — bölümler, araştırma laboratuvarları, öğrenci hayatı ve duyurular."
+    },
+    "bolumlerimiz": {
+      "title": "Bölümlerimiz | Hacettepe Üniversitesi Mühendislik Fakültesi",
+      "description": "Hacettepe Üniversitesi Mühendislik Fakültesi'nin bölümleri ve lisansüstü programları."
+    }
+  },
+  "bolumlerimiz": {
+    "breadcrumb": {
+      "home": "Anasayfa",
+      "current": "Bölümlerimiz"
+    },
+    "hero": {
+      "eyebrow": "Eğitim & Öğretim",
+      "title": "9 Bölümde Dünya Standartlarında Mühendislik Eğitimi"
+    },
+    "filters": {
+      "all": "Tümü",
+      "bilgisayarElektronik": "Bilgisayar & Elektronik",
+      "endustri": "Endüstri & Yönetim",
+      "cevreDoga": "Çevre & Doğa Bilimleri",
+      "kimyaEnerji": "Kimya & Enerji"
+    },
+    "dept": {
+      "bilgisayar": { "title": "Bilgisayar Mühendisliği", "desc": "Yapay zeka, yazılım mühendisliği ve siber güvenlik alanlarında güçlü bir müfredat sunar." },
+      "elektrik": { "title": "Elektrik ve Elektronik Mühendisliği", "desc": "Güç sistemleri, haberleşme ve gömülü sistemler alanlarında lisans ve lisansüstü eğitim verir." },
+      "endustri": { "title": "Endüstri Mühendisliği", "desc": "Üretim sistemleri, optimizasyon ve veri analitiği alanlarında disiplinler arası bir eğitim sunar." },
+      "cevre": { "title": "Çevre Mühendisliği", "desc": "Su ve atık yönetimi, sürdürülebilirlik ve çevresel etki değerlendirmesi üzerine çalışır." },
+      "jeoloji": { "title": "Jeoloji Mühendisliği", "desc": "Yer bilimleri, maden kaynakları ve doğal afet risklerinin incelenmesi alanında uzmanlaşır." },
+      "maden": { "title": "Maden Mühendisliği", "desc": "Maden işletmeciliği, cevher hazırlama ve sondaj teknolojileri alanında eğitim verir." },
+      "gida": { "title": "Gıda Mühendisliği", "desc": "Gıda güvenliği, işleme teknolojileri ve biyoteknoloji alanlarında araştırma yürütür." },
+      "kimya": { "title": "Kimya Mühendisliği", "desc": "Proses tasarımı, malzeme bilimi ve enerji dönüşümü konularında güçlü bir laboratuvar altyapısına sahiptir." },
+      "nukleer": { "title": "Nükleer Enerji Mühendisliği", "desc": "Nükleer enerji sistemleri, radyasyon güvenliği ve enerji politikaları alanında uzmanlaşmış bir bölümdür." }
+    },
+    "cta": {
+      "title": "Programlar Hakkında Daha Fazla Bilgi Alın",
+      "lead": "Bölüm müfredatları, kontenjanlar ve başvuru koşulları için bölüm sayfalarını ziyaret edin.",
+      "calendarBtn": "Akademik Takvim",
+      "contactBtn": "Danışmanlıkla İletişime Geç"
+    }
+  },
+  "common": {
+    "skipLink": "İçeriğe geç",
+    "utility": {
+      "sbs": "Öğrenci Bilgi Sistemi",
+      "email": "Personel E-postası",
+      "library": "Kütüphane"
+    },
+    "nav": {
+      "kurumsal": "Kurumsal",
+      "kurumsalColUniversite": "Üniversite",
+      "kurumsalColKurumsal": "Kurumsal",
+      "kurumsalMenu": {
+        "tarihce": "Tarihçe",
+        "dekanlik": "Dekanlık ve Yönetim",
+        "yerleske": "Yerleşkemiz",
+        "sayilarla": "Sayılarla Hacettepe",
+        "kimlik": "Kurumsal Kimlik",
+        "iletisimBilgileri": "İletişim Bilgileri"
+      },
+      "bolumlerimiz": "Bölümlerimiz",
+      "duyurular": "Duyurular",
+      "duyurularCol1": "Duyuru Türleri",
+      "duyurularCol2": "Hızlı Erişim",
+      "duyurularMenu": {
+        "akademik": "Akademik Duyurular",
+        "sinav": "Sınav Duyuruları",
+        "idari": "İdari Duyurular",
+        "tumDuyurular": "Tüm Duyurular",
+        "arsiv": "Duyuru Arşivi",
+        "takvim": "Akademik Takvim"
+      },
+      "belgeVeFormlar": "Belge ve Formlar",
+      "galeri": "Galeri",
+      "galeriCol1": "Görseller",
+      "galeriCol2": "Medya",
+      "galeriMenu": {
+        "kampus": "Kampüs Galerisi",
+        "etkinlik": "Etkinlik Galerisi",
+        "video": "Video Galerisi",
+        "ogrenciHayati": "Öğrenci Hayatı"
+      },
+      "haberler": "Haberler",
+      "etkinlikler": "Etkinlikler",
+      "iletisim": "İletişim"
+    },
+    "header": {
+      "girisBtn": "Giriş",
+      "searchAria": "Ara",
+      "menuAria": "Menüyü aç/kapat"
+    },
+    "search": {
+      "placeholder": "Sitede ara: bölüm, akademisyen, duyuru…",
+      "ariaLabel": "Site içi arama",
+      "button": "Ara",
+      "closeAria": "Aramayı kapat",
+      "populer": "Popüler:",
+      "suggest": {
+        "bolumlerimiz": "Bölümlerimiz",
+        "takvim": "Akademik Takvim",
+        "yurt": "Yurt Başvurusu",
+        "iletisim": "İletişim"
+      }
+    },
+    "footer": {
+      "brandName": "Mühendislik Fakültesi",
+      "address": "Hacettepe Üniversitesi, Beytepe Kampüsü, 06800 Çankaya/Ankara",
+      "colUniversite": {
+        "title": "Üniversite",
+        "hakkimizda": "Hakkımızda",
+        "dekanlik": "Dekanlık",
+        "yerleske": "Yerleşke"
+      },
+      "colAkademik": {
+        "title": "Akademik",
+        "bolumlerimiz": "Bölümlerimiz",
+        "egitimProgramlari": "Eğitim Programları",
+        "takvim": "Akademik Takvim"
+      },
+      "colOgrenciler": {
+        "title": "Öğrenciler",
+        "ogrenciHayati": "Öğrenci Hayatı",
+        "yurtlar": "Yurtlar",
+        "kariyerMerkezi": "Kariyer Merkezi"
+      },
+      "colIletisim": {
+        "title": "İletişim",
+        "iletisimFormu": "İletişim Formu"
+      },
+      "copyright": "© 2026 Hacettepe Üniversitesi Mühendislik Fakültesi. Bu, eğitim amaçlı bir tasarım örneğidir.",
+      "gizlilik": "Gizlilik",
+      "erisilebilirlik": "Erişilebilirlik",
+      "siteHaritasi": "Site Haritası"
+    },
+    "backToTop": {
+      "aria": "Yukarı çık"
+    }
+  },
+  "index": {
+    "hero": {
+      "eyebrow": "Hacettepe Üniversitesi",
+      "title": "Mühendislikte Bilim, Araştırma ve Yeniliğin Buluşma Noktası",
+      "lead": "Mühendislik Fakültesi; 9 bölümü, 50'den fazla araştırma laboratuvarı ve güçlü sanayi işbirlikleriyle geleceğin mühendislerini yetiştiriyor.",
+      "ctaExplore": "Bölümleri Keşfet",
+      "ctaAbout": "Fakülteyi Tanı",
+      "searchPlaceholder": "Bölüm, laboratuvar veya duyuru ara…",
+      "searchButton": "Ara"
+    },
+    "departments": {
+      "title": "Bölümlerimiz",
+      "allLink": "Tüm bölümler",
+      "dept1": "Bilgisayar Mühendisliği",
+      "dept2": "Elektrik ve Elektronik Mühendisliği",
+      "dept3": "Endüstri Mühendisliği",
+      "dept4": "Çevre Mühendisliği",
+      "dept5": "Jeoloji Mühendisliği",
+      "dept6": "Maden Mühendisliği",
+      "dept7": "Gıda Mühendisliği",
+      "dept8": "Kimya Mühendisliği",
+      "dept9": "Nükleer Enerji Mühendisliği"
+    },
+    "discover": {
+      "eyebrow": "Akademik & Araştırma Dünyamız",
+      "title": "Fakültemizi Keşfet",
+      "lead": "Eğitim programlarımızdan araştırma altyapımıza, akademik kadromuzdan projelerimize kadar fakültemizin sunduğu tüm imkânları burada bulabilirsiniz.",
+      "card1": { "badge": "9 Bölüm", "title": "Bölümlerimiz", "desc": "Bilgisayar, elektrik-elektronik, endüstri, çevre, jeoloji, maden, gıda, kimya ve nükleer enerji mühendisliği bölümlerimiz.", "link": "Bölümleri Listele & İncele" },
+      "card2": { "badge": "3 Kademe", "title": "Eğitim Programları", "desc": "Lisans, Yüksek Lisans, Doktora, Çift Anadal (ÇAP), Erasmus ve zorunlu yaz stajı programları.", "link": "Programları İncele" },
+      "card3": { "badge": "50+ Lab", "title": "Araştırma Laboratuvarları", "desc": "Yapay zeka, biyomedikal mühendislik, VLSI devre tasarımı ve malzeme bilimi laboratuvarları.", "link": "Laboratuvarları İncele" },
+      "card4": { "badge": "183 Öğretim Üyesi", "title": "Öğretim Elemanları", "desc": "Profesör, doçent ve araştırma görevlilerinden oluşan güçlü akademik kadromuzu tanıyın.", "link": "Kadroyu Gör" },
+      "card5": { "badge": "Hakemli", "title": "Dergiler", "desc": "Mühendislik Bilimleri Dergisi ve bölümlerimize bağlı hakemli akademik yayınlara erişin.", "link": "Dergileri Aç" },
+      "card6": { "badge": "103 Proje", "title": "Projeler & İşbirlikleri", "desc": "TÜBİTAK destekli araştırmalar, AB Horizon Europe konsorsiyumları ve sanayi Ar-Ge işbirlikleri.", "link": "Projeleri Göster" }
+    },
+    "announcements": {
+      "title": "Duyurular",
+      "allLink": "Tüm duyurular",
+      "filterAll": "Tüm Duyurular",
+      "filterStudent": "Öğrenci",
+      "filterStaff": "Personel",
+      "card1": { "topic": "Kayıt", "title": "Bahar Dönemi Yandal / Çift Anadal Başvuruları Başladı", "desc": "Yandal ve çift anadal program başvuruları 10-20 Ağustos tarihleri arasında öğrenci bilgi sistemi üzerinden alınacaktır." },
+      "card2": { "topic": "Sınav", "title": "Bütünleme Sınav Programı Yayınlandı", "desc": "2025-2026 Bahar dönemi bütünleme sınav programına öğrenci bilgi sisteminden ulaşabilirsiniz." },
+      "card3": { "topic": "Burs", "title": "Yemek Bursu Başvuru Sonuçları Açıklandı", "desc": "Bahar dönemi yemek bursu başvuru sonuçları öğrenci bilgi sistemi üzerinden ilan edilmiştir." },
+      "card4": { "topic": "Staj", "title": "Zorunlu Yaz Stajı Başvuruları Başladı", "desc": "Staj yapılacak firmaların belirlenip Staj Komisyonu'na bildirilmesi gerekmektedir." },
+      "card5": { "topic": "Akademik İlan", "title": "BAP ve TÜBİTAK Proje Destek Başvuruları Bilgilendirme Semineri", "desc": "Dekanlık tarafından organize edilen araştırma projeleri teşvik semineri Fakülte Konferans Salonu'nda yapılacaktır." },
+      "card6": { "topic": "İdari", "title": "Fakülte Kurulu ve Yönetim Kurulu Toplantı Kararları", "desc": "Fakülte Yönetim Kurulu oturumunda alınan güncel kararlar ve ders müfredatı güncellemeleri yayınlanmıştır." }
+    },
+    "news": {
+      "title": "Fakültemizden Haberler",
+      "lead": "Araştırma başarılarından akademik işbirliklerine, öğrencilerimizin kazanımlarından kampüs yaşamına kadar sizi bilgilendirecek ve ilham verecek haberler.",
+      "allBtn": "Tüm Haberler",
+      "intro": "Mühendislik Fakültesi; bilgisayardan çevre mühendisliğine, kimyadan nükleer enerjiye kadar 9 bölümüyle ürettiği araştırmaları sektöre ve topluma değere dönüştürüyor.",
+      "quote": "Kuruluşundan bugüne disiplinler arası araştırma vizyonuyla çalışan Fakültemiz, öğretim üyelerinin ve öğrencilerinin ürettiği bilgiyi sanayi işbirlikleri ve yeni teknolojilere dönüştürmeyi sürdürüyor.",
+      "tagLabel": "Haber",
+      "item1": { "category": "Akademik", "title": "Mühendislik Fakültesi'nden Yapay Zekâ Alanında Uluslararası İşbirliği", "desc": "Fakültemiz, yapay zeka ve otonom sistemler alanında Avrupalı üç üniversite ile ortak araştırma protokolü imzaladı.", "readTime": "3 dk okuma" },
+      "item2": { "category": "Araştırma", "title": "12 Maddede 2026 Bilim ve Ar-Ge Raporu", "desc": "Yıllık rapor, fakültemizin araştırma çıktılarındaki artışı ve sürdürülebilir finansman ihtiyacını ortaya koyuyor.", "readTime": "5 dk okuma" },
+      "item3": { "category": "Başarı", "title": "Öğrencilerimiz Robotik Yarışmasında Türkiye Şampiyonu Oldu", "desc": "Bilgisayar Mühendisliği öğrencilerinden oluşan takım, ulusal robotik yarışmasında birincilik ödülü kazandı.", "readTime": "2 dk okuma" },
+      "item4": { "category": "Duyuru", "title": "Bahar Dönemi Ders Kayıt Takvimi Yayınlandı", "desc": "2025-2026 Bahar dönemi ders kayıtları 10-14 Şubat tarihleri arasında öğrenci bilgi sistemi üzerinden yapılacaktır.", "readTime": "2 dk okuma" },
+      "item5": { "category": "Kampüs", "title": "Beytepe Kampüsü'nde Yeni Öğrenci Yurdu Açıldı", "desc": "500 öğrenci kapasiteli yeni yurt binası, modern sosyal alanları ve çalışma salonlarıyla hizmete girdi.", "readTime": "3 dk okuma" },
+      "item6": { "category": "Uluslararası", "title": "Erasmus+ Değişim Programına Yeni Üniversiteler Eklendi", "desc": "Öğrencilerimiz artık Almanya ve İspanya'daki beş yeni ortak üniversitede değişim programına katılabilecek.", "readTime": "2 dk okuma" }
+    },
+    "stats": {
+      "title": "Rakamlarla Fakültemiz",
+      "lead": "Disiplinler arası araştırmalarımızı somut etkiye dönüştürmek için güçlü bir akademik kadroya, geniş bir öğrenci topluluğuna ve aktif araştırma projelerine sahibiz.",
+      "badge": "Etkimiz",
+      "label1": "Lisans Öğrencisi",
+      "label2": "Lisansüstü Öğrencisi",
+      "label3": "Öğretim Üyesi",
+      "label4": "Aktif Proje",
+      "label5": "Toplam Mezun"
+    },
+    "events": {
+      "title": "Etkinlikler",
+      "lead": "Kariyer günlerinden akademik tanıtımlara, festivallerden mezuniyet törenlerine kadar fakültemizdeki tüm etkinlikleri buradan takip edebilirsiniz.",
+      "searchPlaceholder": "Etkinlik ara…",
+      "filterAll": "Tümü",
+      "filterKariyer": "Kariyer",
+      "filterTanitim": "Tanıtım",
+      "filterFestival": "Festival",
+      "filterToren": "Tören",
+      "ctaLabel": "Detaylar",
+      "item1": { "category": "Kariyer", "title": "Mühendislik Kariyer Günleri", "location": "Kongre Merkezi · 09:00", "desc": "40'tan fazla firma ile birebir görüşme, staj ve iş fırsatları." },
+      "item2": { "category": "Tanıtım", "title": "Açık Kapı Günü", "location": "Beytepe Kampüsü · 10:00", "desc": "Adaylar için laboratuvar gezileri, bölüm tanıtımları ve öğrenci buluşmaları." },
+      "item3": { "category": "Festival", "title": "Teknoloji ve İnovasyon Şenliği", "location": "Mühendislik Fakültesi Bahçesi · 11:00", "desc": "Öğrenci proje sergisi, robotik gösterileri ve girişimcilik standları." },
+      "item4": { "category": "Tören", "title": "Mezuniyet Töreni", "location": "Kongre Merkezi · 15:00", "desc": "2026-2027 mezunlarımız için tören ve resmi kep atma töreni." },
+      "item5": { "category": "Kariyer", "title": "Mezunlarla Buluşma Günü", "location": "Mühendislik Fakültesi Amfisi · 14:00", "desc": "Mezun mühendislerimizden kariyer tavsiyeleri ve networking imkânı." },
+      "item6": { "category": "Festival", "title": "Bilim Şenliği Açık Hava Etkinliği", "location": "Beytepe Kampüsü Meydanı · 12:00", "desc": "Öğrenci kulüplerinin düzenlediği bilim ve teknoloji temalı açık hava etkinliği." },
+      "item7": { "category": "Tanıtım", "title": "Yeni Öğrenci Tanıtım Günü", "location": "Kongre Merkezi · 09:30", "desc": "Yeni kayıt olan öğrenciler için oryantasyon ve bölüm tanıtım programı." }
+    }
+  }
+}
