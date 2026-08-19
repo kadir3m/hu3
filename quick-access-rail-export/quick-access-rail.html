@@ -1,0 +1,75 @@
+<!--
+  Hızlı Erişim (Quick Access) rail widget — standalone markup.
+
+  Nasıl çalışır:
+  - Masaüstünde (>1180px) sağ kenara yapışık dar bir "tab" (yıldırım ikonu) görünür.
+    Üzerine hover yapılınca ya da tıklanınca (mobil/dokunmatik) tab, menüye dönüşerek büyür.
+    Dikeyde sürüklenip konumlandırılabilir (aşağı/yukarı taşınabilir).
+  - 1180px altında bunun yerine üstte yatay kaydırılabilir bir "chip" şeridi (.rail-strip) gösterilir.
+
+  Kurulum:
+  1) Bu HTML bloğunu <body> içine, sayfanın SONUNA yakın bir yere (örn. </body>'den hemen önce) ekleyin.
+  2) quick-access-rail.css dosyasını <head>'e ekleyin.
+  3) quick-access-rail.js dosyasını sayfanın sonunda <script> ile ekleyin (DOM'dan sonra).
+  4) Aşağıdaki <a href="#"> linklerini kendi menü öğelerinizle değiştirin (SVG ikonları da dahil).
+  5) Dil değiştirme (.rail-lang) ve sosyal medya (.rail-social) bloklarını istemiyorsanız
+     tamamen silebilirsiniz — CSS/JS tarafında onlara bağımlı başka bir şey yok.
+-->
+
+<div class="qar-rail" id="qarRail">
+  <button class="qar-rail-handle" id="qarRailHandle" aria-label="Hızlı Erişim" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+  </button>
+  <div class="qar-rail-menu">
+    <span class="qar-rail-title">Hızlı Erişim</span>
+
+    <!-- Menü öğeleri: her biri bir ikon + metin. İstediğiniz kadar ekleyip çıkarabilirsiniz. -->
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
+      <span>Akademik Takvim</span>
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <span>Giriş</span>
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v10M12 4l-4 3M12 4l4 3"/><circle cx="12" cy="17" r="3.2"/></svg>
+      <span>Duyurular</span>
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V7l8-3 8 3v12"/><path d="M4 19h16"/></svg>
+      <span>Etkinlikler</span>
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5v15l4-2 4 2 4-2 4 2V5a2 2 0 00-2-2H6a2 2 0 00-2 2z"/></svg>
+      <span>Kütüphane</span>
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H8l-4 4V5a2 2 0 012-2h13a2 2 0 012 2z"/></svg>
+      <span>Geri Bildirim</span>
+    </a>
+
+    <!-- OPSİYONEL: dil değiştirme. İstemiyorsanız bu div'i tamamen silin. -->
+    <div class="qar-rail-divider"></div>
+    <div class="qar-rail-lang" data-qar-lang-toggle>
+      <button type="button" class="active" data-lang="tr">TR</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+
+    <!-- OPSİYONEL: sosyal medya ikonları. İstemiyorsanız bu div'i tamamen silin. -->
+    <div class="qar-rail-social">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+      <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7 8.5L4.5 20H7l5-5.8L16 20h4l-7.3-8.8L19.5 4H17l-4.6 5.3L8 4z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.2" cy="7.8" r=".6" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="9" width="3" height="10"/><circle cx="5.5" cy="5.5" r="1.6"/><path d="M11 9h3v1.6c.7-1 1.8-1.8 3.4-1.8 2.6 0 3.6 1.7 3.6 4.4V19h-3v-5.2c0-1.2-.4-2-1.6-2-1 0-1.6.7-1.9 1.4-.1.3-.1.6-.1 1V19h-3z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6.5" width="18" height="11" rx="3"/><path d="M11 10l4 2-4 2z" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- 1180px altı için: yatay kaydırılabilir chip şeridi. Farklı bir elemana ihtiyacınız yoksa
+     ve mobilde kendi tab-bar'ınız zaten benzer linkleri veriyorsa bunu tamamen kaldırabilirsiniz. -->
+<div class="qar-rail-strip" id="qarRailStrip">
+  <a href="#">Akademik Takvim</a><a href="#">Giriş</a><a href="#">Duyurular</a>
+  <a href="#">Etkinlikler</a><a href="#">Kütüphane</a><a href="#">Geri Bildirim</a>
+</div>

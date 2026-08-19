@@ -1,0 +1,128 @@
+/* ============================================================
+   Hızlı Erişim (Quick Access) rail widget — standalone CSS
+   Sınıf öneki: .qar- (Quick Access Rail) — projenizdeki mevcut
+   .rail / .rail-menu gibi genel isimlerle çakışmaması için.
+
+   ÖZELLEŞTİRME:
+   Aşağıdaki değişkenleri KENDİ marka renklerinize göre değiştirin.
+   Bu dosya kendi başına çalışır (dışarıdan hiçbir --degisken gerektirmez);
+   sadece bu :root bloğundaki değerleri güncellemeniz yeterli.
+   ============================================================ */
+:root{
+  --qar-accent-1: #6E0D1E;      /* tab/menü gradyanının koyu ucu */
+  --qar-accent-2: #E51937;      /* tab/menü gradyanının açık ucu */
+  --qar-cta-grad: linear-gradient(135deg, #BDC1DF, #8073B5 60%, #534367); /* menü içindeki öne çıkan CTA linki (varsa) */
+  --qar-cta-text: #211C2B;
+  --qar-glow: 0 8px 30px -6px rgba(229,25,55,.55);
+  --qar-font: inherit;
+  /* mobil şerit (.qar-rail-strip) açık tema renkleri */
+  --qar-strip-bg: #FFFFFF;
+  --qar-strip-border: #E2DFEA;
+  --qar-strip-chip-border: #C7C2D6;
+  --qar-strip-hover-text: #6E0D1E;
+  --qar-strip-hover-bg: rgba(229,25,55,.12);
+}
+
+/* ---------- masaüstü rail: dar tab, hover/tıklamada menüye dönüşür ---------- */
+.qar-rail{
+  position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:1000;
+  width:28px;height:112px;
+  background:linear-gradient(155deg, var(--qar-accent-1) 0%, var(--qar-accent-2) 100%);
+  border-radius:14px 0 0 14px;
+  box-shadow:var(--qar-glow);
+  overflow:hidden;
+  font-family:var(--qar-font);
+  transition:width .38s cubic-bezier(.16,.8,.4,1), height .38s cubic-bezier(.16,.8,.4,1), border-radius .3s ease, box-shadow .3s ease;
+}
+.qar-rail:hover:not(.qar-dragging),
+.qar-rail.qar-open,
+.qar-rail:focus-within{
+  width:196px;height:382px;
+  border-radius:18px;
+  box-shadow:0 20px 50px -20px rgba(0,0,0,.6);
+}
+.qar-rail-handle{
+  position:absolute;inset:0;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;background:none;border:none;padding:0;margin:0;
+  cursor:grab;touch-action:none;
+  opacity:1;transition:opacity .16s ease;
+}
+.qar-rail-handle:active{cursor:grabbing;}
+.qar-rail:hover:not(.qar-dragging) .qar-rail-handle,
+.qar-rail.qar-open .qar-rail-handle{opacity:0;pointer-events:none;}
+.qar-rail-handle svg{width:16px;height:16px;flex:none;}
+
+.qar-rail-menu{
+  position:absolute;inset:0;
+  backdrop-filter:blur(14px) saturate(1.3);
+  -webkit-backdrop-filter:blur(14px) saturate(1.3);
+  padding:.85rem;
+  display:flex;flex-direction:column;gap:.15rem;
+  opacity:0;pointer-events:none;
+  transition:opacity .22s ease .08s;
+}
+.qar-rail:hover:not(.qar-dragging) .qar-rail-menu,
+.qar-rail.qar-open .qar-rail-menu,
+.qar-rail:focus-within .qar-rail-menu{
+  opacity:1;pointer-events:auto;
+}
+.qar-rail-title{
+  font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75);
+  padding:.3rem .5rem .6rem;display:block;white-space:nowrap;
+}
+.qar-rail-menu a{
+  display:flex;align-items:center;gap:.6rem;padding:.6rem .5rem;border-radius:10px;
+  font-size:.8rem;color:#fff;white-space:nowrap;text-decoration:none;
+  transition:background .15s,transform .15s;
+}
+.qar-rail-menu a:hover{background:rgba(255,255,255,.16);transform:translateX(2px);}
+.qar-rail-menu a svg{width:15px;height:15px;flex:none;opacity:.9;}
+/* isteğe bağlı: menü içine öne çıkan bir CTA linki koymak isterseniz class="cta" ekleyin */
+.qar-rail-menu .qar-cta{
+  margin-top:.5rem;background:var(--qar-cta-grad);color:var(--qar-cta-text);font-weight:700;
+  justify-content:center;box-shadow:0 8px 26px -8px rgba(189,193,223,.55);
+}
+
+.qar-rail-divider{height:1px;background:rgba(255,255,255,.18);margin:.55rem .3rem .5rem;flex:none;}
+
+.qar-rail-lang{display:flex;gap:.3rem;padding:0 .3rem .6rem;flex:none;}
+.qar-rail-lang button{
+  flex:1;padding:.32rem 0;border-radius:8px;border:1px solid rgba(255,255,255,.35);
+  background:transparent;color:#fff;font-family:var(--qar-font);font-size:.7rem;font-weight:700;letter-spacing:.04em;
+  cursor:pointer;transition:background .15s,border-color .15s;
+}
+.qar-rail-lang button.active{background:rgba(255,255,255,.26);border-color:transparent;}
+
+.qar-rail-social{display:flex;gap:.4rem;padding:0 .3rem;justify-content:space-between;flex:none;}
+.qar-rail-social a{
+  width:26px;height:26px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.16);color:#fff;text-decoration:none;
+  transition:background .15s,transform .15s;
+}
+.qar-rail-social a:hover{background:rgba(255,255,255,.3);transform:translateY(-2px);}
+.qar-rail-social a svg{width:13px;height:13px;flex:none;}
+
+@media (max-width:1180px){ .qar-rail{display:none;} }
+
+/* ---------- mobil/tablet: yatay kaydırılabilir chip şeridi ---------- */
+.qar-rail-strip{display:none;}
+@media (max-width:1180px){
+  .qar-rail-strip{
+    display:flex;gap:.6rem;overflow-x:auto;padding:1.1rem clamp(1.25rem,4vw,3rem);
+    background:var(--qar-strip-bg);border-bottom:1px solid var(--qar-strip-border);
+    font-family:var(--qar-font);
+  }
+  .qar-rail-strip a{
+    flex:none;font-size:.78rem;font-weight:600;padding:.5rem .9rem;border-radius:99px;
+    border:1px solid var(--qar-strip-chip-border);white-space:nowrap;color:inherit;text-decoration:none;
+    transition:border-color .15s,background .15s,color .15s;
+  }
+  .qar-rail-strip a:hover{
+    border-color:var(--qar-accent-2);background:var(--qar-strip-hover-bg);color:var(--qar-strip-hover-text);
+  }
+}
+/* İsterseniz kendi mobil tab-bar'ınız zaten aynı linkleri veriyorsa bu satırla şeridi
+   sadece tablet aralığında (900-1180px) gösterip telefon genişliğinde gizleyebilirsiniz: */
+/* @media (max-width:900px){ .qar-rail-strip{display:none;} } */

@@ -67,6 +67,10 @@
           matched.textContent.trim();
       }
     });
+
+    document.querySelectorAll(".qar-rail-lang button").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+    });
   }
 
   function loadLanguage(lang) {
@@ -132,6 +136,15 @@
     document.addEventListener("click", closeAllLangSwitches);
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") closeAllLangSwitches();
+    });
+
+    document.querySelectorAll(".qar-rail-lang button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var newLang = btn.getAttribute("data-lang");
+        if (!newLang || newLang === localStorage.getItem(STORAGE_KEY)) return;
+        localStorage.setItem(STORAGE_KEY, newLang);
+        loadLanguage(newLang);
+      });
     });
   }
 
